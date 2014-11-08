@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<!-- Define div classses to be pre-sized text fields -->
+<style>
+div.scroll {
+    background-color: #3f0000;
+    width: 400px;
+    height: 500px;
+    overflow: scroll;
+}
+
+div.hidden {
+    background-color: #3f0000;
+    width: 100px;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+</style>
+
+
+
+<!-- Text displayed in web-address tab -->
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Web</title>
+
+<link rel="stylesheet" href="css/global.css" type="text/css">
+<link rel="stylesheet" href="css/display_data.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<div id="titleSpacer"></div>
+<div id="header">display_data.html</div>
+<div id="sidebar">
+<div id="btnHome"><a href="index.html">Home</a></div>
+<div id="btnReview"><a href="new_search.html">New Search</a></div>
+<div id="btnTheWeb">Display Data</div>
+</div>
+
+
+<div id="hero">
+
+<!--
+
+getVideo startday starttime endday endtime eventflags heatmap &
+
+startday:	yyyy/mm/dd
+starttime:	hh:mm:ss
+endday:		yyyy/mm/dd
+endtime:	hh:mm:ss
+
+eventflags: comma seperated 2 char event types or the word none
+heatmap: name of measurement or raw if we want just pictures
+
+-->
+
+<div class="scroll">
+<!--<div style="height:80%;overflow:auto;"> -->
+<!--<table style="width:100%">-->
+<table width="400", id="myTable", align = "left">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
+</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "NEW CELL1";
+    cell2.innerHTML = "NEW CELL2";
+}
+</script>
+
+<div align="right">
+<<object width="300" height="300">
+    <param name="movie" value="video.swf">
+    <embed src="video.swf" width="300" height="300">
+    </embed>
+</object>
+
+</div> <!-- end hero -->
+<div id="Credit1">description of picture</div>
+</div>
+<br>
+<br>
+
+
+</div>
+<div class="clear"></div>
+<div id="footer">Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors</div>
+</div>
+</body></html>
