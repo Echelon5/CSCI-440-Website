@@ -3,26 +3,23 @@
 body {
   float: left;
 }
-#wrapper_index {
-  width: 1024px;
-  height: 1080px;
-  color: silver;
-  float: left;
-}
-#wrapper_search {
-  width: 1024px;
-  height: 768px;
-  color: silver;
-  float: left;
-}
-#wrapper_data {
+#wrapper {
   width: 1024px;
   height: 768px;
   color: silver;
   float: left;
 }
 
-
+#hero {
+  border-style: none solid none none;
+  border-color: black;
+  border-width: 1px;
+  float: left;
+  width: 872px;
+  height: 615px;
+  background-color: #3f0000;
+  color: silver;
+}
 
 #header {
   border-style: solid solid solid none;
@@ -63,7 +60,17 @@ body {
   padding-top: 5px;
 }
 
-
+#sidebar {
+  float: left;
+  width: 121px;
+  height: 595px;
+  background-color: #3f0000;
+  color: silver;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-size: 15px;
+}
 
 #btnHome {
 }
