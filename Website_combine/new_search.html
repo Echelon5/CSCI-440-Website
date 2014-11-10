@@ -1,33 +1,39 @@
 <html style="width: 100%; height: 100%; border: 0; margin: 0">
 	<body style="width: 100%; height: 100%; border: 0; margin: 0">
 		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px solid blue">
-		
-			<!---------------------------------------------------------------------------------------------->
-			
 			<tr>																			<!-- header ---->	
-				<td colspan="2" style="width: 100$; border: 2px dashed orange; height:10%;">
-					new_search.html
+				<!--<td colspan="3" style="width: 100$; border: 2px dashed orange; height:10%;">-->
+				<td colspan="3" style="	width: 100%; 
+										height:10%; 
+										border-style: solid solid solid none;
+										border-color: black;
+										border-width: 1px;
+										float: left;
+										text-align: left;
+										background-color: #2a0000;
+										background-position:  center center;
+										background-repeat: no-repeat;
+										font-size: 60px;
+										line-height: 10%;
+										padding-left: 15px;
+  
+  
+										new_search.html;
 				</td>	
 			</tr>
 																							<!-- /header --->
-																				
-			<!---------------------------------------------------------------------------------------------->
-			
-			<tr>																<!-- leftScrollingSidebar -->
-				<td style="width: 10%; border: 2px dashed orange; height:100%;">
+			<!---------------------------------------------------------------------------------------------->																				
+			<tr>																
+				<!--<td style="width: 10%; border: 2px dashed orange; height:100%;">-->			<!-- leftSidebar -->
+				<td style="width: 10%; border: 2px dashed orange; height:100%;">	
 					<a href="index.html">Home</a><br>
 					<a href="http://www.w3schools.com/html/">New Search</a><br>
 					<a>Display Data</a>	<br>
 				</td>
-					
-				<td style="width: 90%; border: 2px dashed orange; height:100%;">
-					
-					
-					
-					
-					
-					<b>Search Fields</b><br></br>
+																							<!-- /leftSidebar-->
+				<td style="width: 45%; border: 2px dashed orange; height:100%;">			<!-- bodyLeft ----->
 
+					<b>Search Fields</b><br></br>
 					<b>Start Time</b>
 					<input type="date" name="start" min="2012-01-01" max="2012-06-30"><br></br>
 					<b>Hour</b>
@@ -217,9 +223,9 @@
 					  <option value="59">59</option>
 					</select>
 					<!-- end minute_end -->
-
-
-
+				</td>																		
+																							<!-- /bodyLeft ---->
+				<td style="width: 45%; border: 2px dashed orange; height:100%;">			<!-- bodyRight ----->
 					<b>Shown Events</b></br>
 					<input type="checkbox" name="event" value="ar">Active Region<br>
 					<input type="checkbox" name="event" value="ch">Coronal Hole<br>
@@ -244,22 +250,15 @@
 					<br></br>
 					<input type="submit" value="Send">
 					<input type="hidden" name="error_message" value="error">
-					
-					
-
-				</td>
-			</tr>
-																				<!-- /leftScollingSidebar -->
-																				
+				</td>																							
+			</tr>																			<!-- /bodyRight ---->																
 			<!---------------------------------------------------------------------------------------------->
-			
-			<tr>																		<!-- leftSidebar --->
-				<td colspan="2" style="border: 2px dashed brown;">
+			<tr>																			<!-- footer --->
+				<td colspan="3" style="border: 2px dashed brown;">
 					Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors
 				</td>
-			</tr>																
-																						<!-- /leftSidebar -->
-																				
+			</tr>																			
+																							<!-- /footer -->																									
 			<!---------------------------------------------------------------------------------------------->		
 			
 		</table>
