@@ -4,24 +4,22 @@
 <style>
 div.scroll {
     background-color: #3f0000;
-    width: 400px;
-    height: 500px;
+    width: 76%;
+    height: 640px;
     overflow: scroll;
 }
 
 div.hidden {
     background-color: #3f0000;
-    width: 100px;
-    height: 500px;
+    width: 76%;
+    height: 640px;
     overflow: hidden;
 }
-
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-
 </style>
 
 
@@ -45,12 +43,12 @@ table, th, td {
 
 <div id="hero">
 
-<object width="34.5%" height="34.5%" align="RIGHT">
+<object width="24%" height="29.9%" align="RIGHT">
     <param name="movie" value="video.swf">
-    <embed src="video.swf" width="300" height="300">
+    <embed src="video.swf" width="30%" height="30%">
     </embed>
-	
 </object>
+
 
 
 <!--
@@ -70,27 +68,57 @@ heatmap: name of measurement or raw if we want just pictures
 <div class="scroll">
 <!--<div style="height:80%;overflow:auto;"> -->
 <!--<table style="width:100%">-->
-<table width="400", id="myTable", align = "left">
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>		
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>		
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>		
-    <td>80</td>
-  </tr>
+<table width="100%", id="myTable", align = "left">
+	<tr>
+		<th>First</th>
+		<th>Last</th>
+		<th>Num1</th>
+		<th>Num2</th>
+		<th>Num3</th>
+
+	
+	<!-- ----- -->
+	<!-- Row 1 -->
+	<tr>					
+		<td>Jill</td>
+		<td>Smith</td>		
+		<td>50</td>
+		<td>60</td>
+		<td>70</td>
+	</tr>
+	<!-- Row 1 -->
+	<!-- ----- -->
+  
+  
+	<!-- ----- -->
+	<!-- Row 2 -->  
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td>		
+		<td>94</td>
+	</tr>
+	<!-- Row 2 -->
+  	<!-- ----- -->
+  
+  
+ 	<!-- ----- -->
+	<!-- Row 3 -->
+	<tr>
+		<td>John</td>
+		<td>Doe</td>		
+		<td>80</td>
+	</tr>
+	<!-- Row 3 -->
+	<!-- ----- -->
+		
+	
 </table>
 </div>
 
-<button onclick="myFunction()">Try it</button>
 
+<button onclick="myFunction()">Try it</button>
+<!-- ------------------------- -->
+<!-- Create HTML Display Table -->
 <script>
 function myFunction() {
     var table = document.getElementById("myTable");
@@ -101,6 +129,8 @@ function myFunction() {
     cell2.innerHTML = "NEW CELL2";
 }
 </script>
+<!-- Create HTML Display Table -->
+<!-- ------------------------- -->
 
 
 </div> <!-- end hero -->
