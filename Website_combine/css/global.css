@@ -49,7 +49,8 @@ body {
 }
 
 #btnAboutUs {
-  padding-top: 5px;
+	padding-top: 5px;
+	font-size: 17px;
 }
 
 a:link {
@@ -66,7 +67,3 @@ a:hover {
   color: #8c8c8c;
   text-decoration: none;
 }
-
-
-
-
