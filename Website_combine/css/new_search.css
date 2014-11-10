@@ -1,5 +1,5 @@
 #wrapper {
-	width: 1024px;
+	width: auto;
 	height: 768px;
 	color: silver;
 	float: left;
@@ -9,7 +9,7 @@
   border-color: black;
   border-width: 1px;
   float: left;
-  width: 300px;
+  width: 29%;
   height: 615px;
   background-color: #3f0000;
   color: silver;
@@ -23,7 +23,7 @@
   border-color: black;
   border-width: 1px;
   float: right;
-  width: 500px;
+  width: 48%;
   height: 615px;
   background-color: #3f0000;
   color: silver;
@@ -34,7 +34,7 @@
 }
 #sidebar {
   float: left;
-  width: 121px;
+  width: 11%;
   height: 615px;
   background-color: #3f1111;
   color: silver;
@@ -47,7 +47,7 @@
   border-style: solid solid solid none;
   border-color: black;
   border-width: 1px;
-  width: 857px;
+  width: 83%;
   float: left;
   height: 100px;
   text-align: left;
