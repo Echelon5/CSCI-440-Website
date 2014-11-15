@@ -14,7 +14,34 @@
 																							<!-- /leftSidebar-->
 				<td style="width: 45%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft ----->
 
+		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px solid blue">
+		
+			<!---------------------------------------------------------------------------------------------->
+			
+			<tr>																			<!-- header ---->	
+				<td colspan="2" style="width: 100$; border: 2px dashed orange; height:10%;">
+					new_search.html
+				</td>	
+			</tr>
+																							<!-- /header --->
+																				
+			<!---------------------------------------------------------------------------------------------->
+			
+			<tr>																<!-- leftScrollingSidebar -->
+				<td style="width: 10%; border: 2px dashed orange; height:100%;">
+					<a href="index.html">Home</a><br>
+					<a href="http://www.w3schools.com/html/">New Search</a><br>
+					<a>Display Data</a>	<br>
+				</td>
+					
+				<td style="width: 90%; border: 2px dashed orange; height:100%;">
+					
+					
+					
+					
+					
 					<b>Search Fields</b><br></br>
+
 					<b>Start Time</b>
 					<input type="date" name="start" min="2012-01-01" max="2012-06-30"><br></br>
 					<b>Hour</b>
@@ -242,10 +269,49 @@
 			<!---------------------------------------------------------------------------------------------->
 			<tr>																			<!-- footer --->
 				<td colspan="3" style="border: 2px none brown; color: #C0C0C0; background-color: #2a0000;">
+
+
+
+					<b>Shown Events</b></br>
+					<input type="checkbox" name="event" value="ar">Active Region<br>
+					<input type="checkbox" name="event" value="ch">Coronal Hole<br>
+					<input type="checkbox" name="event" value="fi">Filament<br>
+					<input type="checkbox" name="event" value="fl">Flare<br>
+					<input type="checkbox" name="event" value="sg">Sigmoid<br>
+					<input type="checkbox" name="event" value="ss">Sunspot<br>
+
+					<br><b>Measurement Type</b></br>
+					<input type="radio" name="measurement" value="entropy">Entropy<br>
+					<input type="radio" name="measurement" value="mean">Mean<br>
+					<input type="radio" name="measurement" value="std_deviation">Std. Deviation<br>
+					<input type="radio" name="measurement" value="fractal_dim">Fractal Dim.<br>
+					<input type="radio" name="measurement" value="skewness">Skewness<br>
+					<input type="radio" name="measurement" value="kurtosis">Kurtosis<br>
+					<input type="radio" name="measurement" value="uniformity">Uniformity<br>
+					<input type="radio" name="measurement" value="rel_smoothness">Rel. Smoothness<br>
+					<input type="radio" name="measurement" value="t_contrast">T. Contrast<br>
+					<input type="radio" name="measurement" value="t_directionality">T. Directionality<br>
+					<input type="radio" name="measurement" value="raw">Raw data<br>
+					<input type="radio" name="measurement" value="none">None<br>
+					<br></br>
+					<input type="submit" value="Send">
+					<input type="hidden" name="error_message" value="error">
+					
+					
+
+				</td>
+			</tr>
+																				<!-- /leftScollingSidebar -->
+																				
+			<!---------------------------------------------------------------------------------------------->
+			
+			<tr>																		<!-- leftSidebar --->
+				<td colspan="2" style="border: 2px dashed brown;">
 					Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors
 				</td>
-			</tr>																			
-																							<!-- /footer -->																									
+			</tr>																
+																						<!-- /leftSidebar -->
+																				
 			<!---------------------------------------------------------------------------------------------->		
 			
 		</table>
