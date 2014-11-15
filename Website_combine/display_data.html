@@ -1,53 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<!-- Define div classses to be pre-sized text fields -->
-<style>
-div.scroll {
-    background-color: #3f0000;
-    width: 76%;
-    height: 640px;
-    overflow: scroll;
-}
-
-div.hidden {
-    background-color: #3f0000;
-    width: 76%;
-    height: 640px;
-    overflow: hidden;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-</style>
-
-
-
-<!-- Text displayed in web-address tab -->
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Web</title>
-
-<link rel="stylesheet" href="css/global.css" type="text/css">
-<link rel="stylesheet" href="css/display_data.css" type="text/css">
-</head>
-<body>
-<div id="wrapper">
-<div id="titleSpacer"></div>
-<div id="header">display_data.html</div>
-<div id="sidebar">
-<div id="btnHome"><a href="index.html">Home</a></div>
-<div id="btnReview"><a href="new_search.html">New Search</a></div>
-<div id="btnTheWeb">Display Data</div>
-</div>
-
-
+<html style="width: 100%; height: 100%; border: 0; margin: 0">
+	<body style="width: 100%; height: 100%; border: 0; margin: 0">
+		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+        
+			<tr>
+			  <td style="width: 10%; border: 2px none orange; height: 120px; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
+			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">display_data.html</td>
+		  </tr>
+			<tr>																			<!-- header ---->	
+				<!--<td colspan="3" style="width: 100$; border: 2px dashed orange; height:10%;">-->
+				<td valign="top"><br>
+                  <a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
+                  <a href="new_search.html" style="text-decoration : none; color : silver;">New Search</a><br>
+                  <u>Display Data</a></u><br>
+                  
+                </td>
+																							<!-- /leftSidebar-->
+				<td style="width: 45%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft -----><!-- end minute_end -->
 <div id="hero">
-
-<object width="23.5%" height="29.9%" align="RIGHT">
-    <param name="movie" value="video.swf">
-    <embed src="video.swf" width="30%" height="30%">
-    </embed>
-</object>
 
 
 
@@ -65,9 +34,10 @@ heatmap: name of measurement or raw if we want just pictures
 
 -->
 
-<div class="scroll">
+
 <!--<div style="height:80%;overflow:auto;"> -->
 <!--<table style="width:100%">-->
+
 <table width="100%", id="myTable", align = "left">
 	<tr>
 		<th>First</th>
@@ -113,7 +83,7 @@ heatmap: name of measurement or raw if we want just pictures
 		
 	
 </table>
-</div>
+
 
 
 <button onclick="myFunction()">Try it</button>
@@ -133,16 +103,32 @@ function myFunction() {
 <!-- ------------------------- -->
 
 
-</div> <!-- end hero -->
-
-</div>
-
-<br>
-<br>
-
-
-</div>
-<div class="clear"></div>
-<div id="footer">Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors</div>
-</div>
-</body></html>
+</div>				  
+                  
+                  
+                  
+                  
+                  
+                  </td>																		
+																							<!-- /bodyLeft ---->
+				<td style="width: 45%; border: 2px none orange; height: 100%; color: #C0C0C0; background-color: #3f0000;">			<p>
+				<!-- bodyRight -----></p>
+				  <object width="70%" height="70%" align="CENTER">
+    <param name="movie" value="video.swf">
+    <embed src="video.swf" width="100%" height="100%">
+    </embed>
+</object>
+				</td>																							
+			</tr>																			<!-- /bodyRight ---->																
+			<!---------------------------------------------------------------------------------------------->
+			<tr>																			<!-- footer --->
+				<td colspan="3" style="border: 2px none brown; color: #C0C0C0; background-color: #2a0000;">
+					Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors
+				</td>
+			</tr>																			
+																							<!-- /footer -->																									
+			<!---------------------------------------------------------------------------------------------->		
+			
+		</table>
+	</body>
+</html>
