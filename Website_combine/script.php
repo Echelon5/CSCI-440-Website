@@ -7,7 +7,7 @@ $sigmoid = 0; //Sigmoid
 $sunspot = 0; //Sunspot
 
 
-//$selected_measurement = $_GET['measurement'];  //Selected measurement
+$selected_measurement = $_GET['measurement'];  //Selected measurement
 
 
 if (isset($_GET['event_ar'])) {$active_region = 1;}
