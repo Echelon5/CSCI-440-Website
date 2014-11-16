@@ -7,6 +7,13 @@ $sigmoid = 0; //Sigmoid
 $sunspot = 0; //Sunspot
 
 
+
+$channel_number = $_GET['channel'];  //Selected measurement
+
+echo "Channel Number = $channel_number<br><br>";
+
+
+
 $selected_measurement = $_GET['measurement'];  //Selected measurement
 
 echo "Selected measurement = $selected_measurement<br>";
