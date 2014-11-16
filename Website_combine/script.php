@@ -9,6 +9,8 @@ $sunspot = 0; //Sunspot
 
 $selected_measurement = $_GET['measurement'];  //Selected measurement
 
+echo "Selected measurement = $selected_measurement<br>";
+
 
 if (isset($_GET['event_ar'])) {$active_region = 1;}
 if (isset($_GET['event_ch'])) {$coronal_hole = 1;}
