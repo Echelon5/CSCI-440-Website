@@ -17,6 +17,29 @@ $start_time = $_GET['start'];  //Selected measurement
 echo "Start time = $start_time<br>";
 
 
+$start_hour = $_GET['hour_start'];  //Selected measurement
+echo "Start hour = $start_hour<br>";
+
+$start_minute = $_GET['minute_start'];  //Selected measurement
+echo "Start minute = $start_minute<br><br>";
+
+
+
+
+
+
+
+$end_time = $_GET['end'];  //Selected measurement
+
+echo "End time = $end_time<br>";
+
+
+$end_hour = $_GET['hour_end'];  //Selected measurement
+echo "End hour = $end_hour<br>";
+
+$end_minute = $_GET['minute_end'];  //Selected measurement
+echo "End minute = $end_minute<br><br>";
+
 
 
 if (isset($_GET['event_ar'])) {$active_region = 1;}
