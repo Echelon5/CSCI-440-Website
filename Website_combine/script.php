@@ -19,7 +19,7 @@ $selected_measurement = $_GET['measurement'];  //Selected measurement
 echo "Selected measurement = $selected_measurement<br>";
 
 
-$start_time = $_GET['start'];  //Selected measurement
+$start_date = $_GET['start'];  //Selected measurement
 
 echo "Start time = $start_time<br>";
 
@@ -62,8 +62,12 @@ echo "filament = $filament<br>";
 echo "flare = $flare<br>";
 echo "sigmoid = $sigmoid<br>";
 echo "sunspot = $sunspot<br>";
-
-
+																			//193 = 8 seconds
+																			//131 = 11 seconds
+																			
+																			
+$start_hour_min = start_hour . ":" . start_minute . ":" . "8";			//hour minute second
+echo "Specific Time = start_hour_min$<br><br>";
 
 
 ?>
