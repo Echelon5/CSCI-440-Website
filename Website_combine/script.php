@@ -12,6 +12,13 @@ $selected_measurement = $_GET['measurement'];  //Selected measurement
 echo "Selected measurement = $selected_measurement<br>";
 
 
+$start_time = $_GET['start'];  //Selected measurement
+
+echo "Start time = $start_time<br>";
+
+
+
+
 if (isset($_GET['event_ar'])) {$active_region = 1;}
 if (isset($_GET['event_ch'])) {$coronal_hole = 1;}
 if (isset($_GET['event_fi'])) {$filament = 1;}
@@ -25,5 +32,8 @@ echo "filament = $filament<br>";
 echo "flare = $flare<br>";
 echo "sigmoid = $sigmoid<br>";
 echo "sunspot = $sunspot<br>";
+
+
+
 
 ?>
