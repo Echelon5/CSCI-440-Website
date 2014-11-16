@@ -208,15 +208,17 @@
 																							<!-- /bodyLeft ---->
 				<td style="width: 45%; border: 2px none orange; height: 100%; color: #C0C0C0; background-color: #3f0000;">			<p>
 				<!-- bodyRight ----->
+				<form action="script.php" method="GET">
 					<b>Shown Events</b><br>
-				  <input type="checkbox" name="event" value="ar">Active Region<br>
-				  <input type="checkbox" name="event" value="ch">Coronal Hole<br>
-				  <input type="checkbox" name="event" value="fi">Filament<br>
-				  <input type="checkbox" name="event" value="fl">Flare<br>
-				  <input type="checkbox" name="event" value="sg">Sigmoid<br>
-				  <input type="checkbox" name="event" value="ss">Sunspot<br>
+				  <input type="checkbox" name="event_ar" value="ar">Active Region<br>
+				  <input type="checkbox" name="event_ch" value="ch">Coronal Hole<br>
+				  <input type="checkbox" name="event_fi" value="fi">Filament<br>
+				  <input type="checkbox" name="event_fl" value="fl">Flare<br>
+				  <input type="checkbox" name="event_sg" value="sg">Sigmoid<br>
+				  <input type="checkbox" name="event_ss" value="ss">Sunspot<br>
 
 				  <br>
+				  
 				  <b>Measurement Type</b><br>
 				  <input type="radio" name="measurement" value="entropy">Entropy<br>
 				  <input type="radio" name="measurement" value="mean">Mean<br>
@@ -231,7 +233,7 @@
 				  <input type="radio" name="measurement" value="raw">Raw data<br>
 				  <input type="radio" name="measurement" value="none">None<br>
 				  <br></br>
-                  <form action="script.php" method="get">
+                  
 				  <input type="submit" value="Send">
                   </form>
                   
