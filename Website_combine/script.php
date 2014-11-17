@@ -48,13 +48,46 @@ $end_minute = $_GET['minute_end'];  //Selected measurement
 echo "End minute = $end_minute<br><br>";
 
 
+$event_string = "";
 
-if (isset($_GET['event_ar'])) {$active_region = 1;}
-if (isset($_GET['event_ch'])) {$coronal_hole = 1;}
-if (isset($_GET['event_fi'])) {$filament = 1;}
-if (isset($_GET['event_fl'])) {$flare = 1;}
-if (isset($_GET['event_sg'])) {$sigmoid = 1;}
-if (isset($_GET['event_ss'])) {$sunspot = 1;}
+
+if (isset($_GET['event_ar'])) 
+{
+	$active_region = 1;
+	$event_string = $event_string . ",ar";}
+if (isset($_GET['event_ch'])) 
+{
+	$coronal_hole = 1;
+	$event_string = $event_string . ",ch";}
+if (isset($_GET['event_fi'])) 
+{
+	$filament = 1;
+	$event_string = $event_string . ",fi";}
+if (isset($_GET['event_fl'])) 
+{
+	$flare = 1;
+	$event_string = $event_string . ",fl";}
+if (isset($_GET['event_sg'])) 
+{
+	$sigmoid = 1;
+	$event_string = $event_string . ",sg";}
+if (isset($_GET['event_ss'])) 
+{
+	$sunspot = 1;
+	$event_string = $event_string . ",ss";}
+
+
+$event_string= ltrim ($event_string, ',');
+
+if ($event_string == "")
+{
+	$event_string = "none";
+}
+
+echo "Event String = $event_string<br><br>";
+
+
+
 
 echo "active_region = $active_region<br>";
 echo "coronal_hole = $coronal_hole<br>";
@@ -64,10 +97,28 @@ echo "sigmoid = $sigmoid<br>";
 echo "sunspot = $sunspot<br>";
 																			//193 = 8 seconds
 																			//131 = 11 seconds
-//$start_hour_string		= (string)$start_hour;																	
-//$start_minute_string	= (string)$start_minute;																
-$start_hour_min = $start_hour . ":" . $start_minute . ":" . "8";			//hour minute second
+
+
+$selected_channel = $_GET['channel'];  //Selected measurement
+
+if ($selected_channel == 193)
+{
+$start_hour_min = $start_hour . ":" . $start_minute . ":" . "8";
+$end_hour_min = $end_hour . ":" . $end_minute . ":" . "8";			//hour minute second
+}
+else
+{
+$start_hour_min = $start_hour . ":" . $start_minute . ":" . "11";
+$end_hour_min = $end_hour . ":" . $end_minute . ":" . "11";	
+}
+
 echo "Specific Time = $start_hour_min<br><br>";
 
 
+
+$final_input = "getVideo " . $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
+
+echo "final_input = '$final_input'<br><br>";
 ?>
+
+
