@@ -21,7 +21,7 @@ echo "Selected measurement = $selected_measurement<br>";
 
 $start_date = $_GET['start'];  //Selected measurement
 
-echo "Start time = $start_time<br>";
+echo "Start time = $start_date<br>";
 
 
 $start_hour = $_GET['hour_start'];  //Selected measurement
@@ -36,9 +36,9 @@ echo "Start minute = $start_minute<br><br>";
 
 
 
-$end_time = $_GET['end'];  //Selected measurement
+$end_date = $_GET['end'];  //Selected measurement
 
-echo "End time = $end_time<br>";
+echo "End time = $end_date<br>";
 
 
 $end_hour = $_GET['hour_end'];  //Selected measurement
@@ -64,10 +64,10 @@ echo "sigmoid = $sigmoid<br>";
 echo "sunspot = $sunspot<br>";
 																			//193 = 8 seconds
 																			//131 = 11 seconds
-																			
-																			
-$start_hour_min = start_hour . ":" . start_minute . ":" . "8";			//hour minute second
-echo "Specific Time = start_hour_min$<br><br>";
+//$start_hour_string		= (string)$start_hour;																	
+//$start_minute_string	= (string)$start_minute;																
+$start_hour_min = $start_hour . ":" . $start_minute . ":" . "8";			//hour minute second
+echo "Specific Time = $start_hour_min<br><br>";
 
 
 ?>
