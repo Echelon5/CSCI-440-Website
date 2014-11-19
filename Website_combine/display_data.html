@@ -1,134 +1,143 @@
 <html style="width: 100%; height: 100%; border: 0; margin: 0">
+	<head>
+
+
+
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Web</title>
+
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+		<link rel="stylesheet" href="css/display_data.css" type="text/css">
+	</head>
+	
+	
+	
+	
 	<body style="width: 100%; height: 100%; border: 0; margin: 0">
+
+	
+	<?php 
+	$x = 5;
+	$y = 4;
+	echo $x + $y;
+	?>  
+	
+	
+	
 		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
-        
+			
+			<!-- Header -->
 			<tr>
-			  <td style="width: 10%; border: 2px none orange; height: 120px; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
-			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">display_data.html</td>
-		  </tr>
-			<tr>																			<!-- header ---->	
-				<!--<td colspan="3" style="width: 100$; border: 2px dashed orange; height:10%;">-->
-				<td valign="top"><br>
-                  <a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
-                  <a href="new_search.html" style="text-decoration : none; color : silver;">New Search</a><br>
-                  <u>Display Data</a></u><br>
-                  
-                </td>
-																							<!-- /leftSidebar-->
-				<td style="width: 45%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft -----><!-- end minute_end -->
-<div id="hero">
-
-
-
-<!--
-
-getVideo startday starttime endday endtime eventflags heatmap &
-
-startday:	yyyy/mm/dd
-starttime:	hh:mm:ss
-endday:		yyyy/mm/dd
-endtime:	hh:mm:ss
-
-eventflags: comma seperated 2 char event types or the word none
-heatmap: name of measurement or raw if we want just pictures
-
--->
-
-
-<!--<div style="height:80%;overflow:auto;"> -->
-<!--<table style="width:100%">-->
-
-<table width="100%", id="myTable", align = "left">
-	<tr>
-		<th>First</th>
-		<th>Last</th>
-		<th>Num1</th>
-		<th>Num2</th>
-		<th>Num3</th>
-
-	
-	<!-- ----- -->
-	<!-- Row 1 -->
-	<tr>					
-		<td>Jill</td>
-		<td>Smith</td>		
-		<td>50</td>
-		<td>60</td>
-		<td>70</td>
-	</tr>
-	<!-- Row 1 -->
-	<!-- ----- -->
-  
-  
-	<!-- ----- -->
-	<!-- Row 2 -->  
-	<tr>
-		<td>Eve</td>
-		<td>Jackson</td>		
-		<td>94</td>
-	</tr>
-	<!-- Row 2 -->
-  	<!-- ----- -->
-  
-  
- 	<!-- ----- -->
-	<!-- Row 3 -->
-	<tr>
-		<td>John</td>
-		<td>Doe</td>		
-		<td>80</td>
-	</tr>
-	<!-- Row 3 -->
-	<!-- ----- -->
+			  <td style="width: 10%; border: 1px none black; height: 10%; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
+			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">new_seafrch.html</td>
+			</tr>
+			
+			<!-- Body -->
+			<tr>								
 		
-	
-</table>
+				<!-- sidebar -->
+				<td valign="top" style="width: 10%; border: 1px solid black; height: 80%; background-color: #3F0000; color: #C0C0C0;"><br>
+					<a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
+					<a href="new_search.html" style="text-decoration : none; color : silver;">New Search</a><br>
+					<a><u>Display Data</u></a><br>
+				</td>
+					
+				<!-- body left -->
+				<td style="width: 70%; border: 1px none white; height: 100%; position:fixed  background-color: #3F0000; color: #C0C0C0;">
+				
+					<!-- Header Column -->
+					<table style="width:99%; height: 5%; border: 1px solid black; background-color: #2a0000; color: white;">
+						<tr>
+							<td style="border:1px solid black;width:25%">Start Time</td>
+							<td style="border:1px solid black;width:25%">End Time</td> 
+							<td style="border:1px solid black;width:25%">data1</td>
+							<td style="border:1px solid black;width:25%">data2</td>
+						</tr>
+					</table>
+					
+					<!-- Data Columns -->
+					<div style="width:100%; height:95%; position:fixed   border: 1px solid white; background-color: #3F0000;">
+						<div style="width:70%; overflow-y:scroll; height:80%; position:fixed; background-color: #3F0000;">
+							<table width="100%",height="80%", id="myTable", align = "left" style="color:white; background-color: #3F0000;"> 
 
-
-
-<button onclick="myFunction()">Try it</button>
-<!-- ------------------------- -->
-<!-- Create HTML Display Table -->
-<script>
-function myFunction() {
-    var table = document.getElementById("myTable");
-    var row = table.insertRow(0);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    cell1.innerHTML = "NEW CELL1";
-    cell2.innerHTML = "NEW CELL2";
-}
-</script>
-<!-- Create HTML Display Table -->
-<!-- ------------------------- -->
-
-
-</div>				  
-                  
-                  
-                  
-                  
-                  
-                  </td>																		
-																							<!-- /bodyLeft ---->
-				<td style="width: 45%; border: 2px none orange; height: 100%; color: #C0C0C0; background-color: #3f0000;">			<p>
-				<!-- bodyRight -----></p>
-				  <object width="70%" height="70%" align="CENTER">
-    <param name="movie" value="video.swf">
-    <embed src="video.swf" width="100%" height="100%">
-    </embed>
-</object>
+								<tbody>
+									<tr>
+										<td style="border:1px solid black;width:25%"><div>input start time</div></td>
+										<td style="border:1px solid black;width:25%"><div>input end time</div></td>
+										<td style="border:1px solid black;width:25%"><div>input data1</div></td>
+										<td style="border:1px solid black;width:25%"><div>input data2</div></td>
+									</tr>
+									
+									<tr>
+										<td style="border:1px solid black;"><div>input start time</div></td>
+										<td style="border:1px solid black;"><div>input end time</div></td>
+										<td style="border:1px solid black;"><div>input data1</div></td>
+										<td style="border:1px solid black;"><div>input data2</div></td>
+									</tr>
+									
+									<tr>
+										<td style="border:1px solid black;"><div>input start time</div></td>
+										<td style="border:1px solid black;"><div>input end time</div></td>
+										<td style="border:1px solid black;"><div>input data1</div></td>
+										<td style="border:1px solid black;"><div>input data2</div></td>
+									</tr>
+									
+									
+									<tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr><tr><td style="border:1px solid black;"><div>input start time</div></td><td style="border:1px solid black;"><div>input end time</div></td><td style="border:1px solid black;"><div>input data1</div></td><td style="border:1px solid black;"><div>input data2</div></td></tr>
+									
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+							
+							
+							
+							
+							
+							
+							
+					<!--<div class="scroll">
+						<table width="100%",height="80%", id="myTable", align = "left"> </table>
+						</div> -->
+					 
+				</td>																		
+					
+				<!--  body right -->
+				<td valign="top" style="width: 20%; height: 100%; border: 1px none black; color: #C0C0C0; background-color: #3f0000;">
+					<object width="100%" height="100%" align="RIGHT">
+						<param name="movie" value="video.swf">
+						<param name="quality" value="high" />
+						<param name="wmode" value="transparent">
+						<embed src="video.swf" width="50%" height="50%">
+						</embed>
+					</object>
+					
+					
+					<!-- DEBUG -->
+					<!-- <button onclick="myFunction()">Try it</button> -->
+					<script>
+						function myFunction() {
+							var table = document.getElementById("myTable");
+							var row = table.insertRow(0);
+							var cell1 = row.insertCell(0);
+							var cell2 = row.insertCell(1);
+							cell1.innerHTML = "NEW CELL1";
+							cell2.innerHTML = "NEW CELL2";
+						}
+					</script>
+			
+			
 				</td>																							
-			</tr>																			<!-- /bodyRight ---->																
-			<!---------------------------------------------------------------------------------------------->
-			<tr>																			<!-- footer --->
-				<td colspan="3" style="border: 2px none brown; color: #C0C0C0; background-color: #2a0000;">
+			</tr>		
+			
+			<!-- Footer -->
+			<tr>																		
+				<td colspan="3" style="width: 100%; border: 1px solid black; height: 10%; color: #C0C0C0; background-color: #2a0000;">
 					Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors
 				</td>
 			</tr>																			
-																							<!-- /footer -->																									
-			<!---------------------------------------------------------------------------------------------->		
-			
+																																														
+
 		</table>
 	</body>
 </html>
