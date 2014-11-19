@@ -122,8 +122,7 @@ echo "final_input = '$final_input'<br><br>";
 
 //bash here
 
-
-
+string shell_exec ( string $final_input );
 
 //
 
@@ -132,10 +131,10 @@ echo "final_input = '$final_input'<br><br>";
 
 
 
-//  $servername = " localhost ";
-//  $username = " username ";
-//  $password = " password ";
-//  $dbname = " myDB ";
+//  $servername = "http://joshatron.ddns.net/";
+//  $username = "brendan";
+//  $password = "password";
+//  $dbname = " solar ";
 //  // Create connection
 //  $conn = mysqli_connect ( $server , $user , $pass );
 //  // Check connection
@@ -143,8 +142,18 @@ echo "final_input = '$final_input'<br><br>";
 //  die(" Connection failed : " . $conn - > connect_error );
 //								  }
 //  
-//  
+// 
+
+
+ 
 //  $sql = " SELECT id , fname , lname FROM EMPLOYEES ";
+
+
+//SQL Search Between Start Timestamp and End Timestamp
+//For sql String, Search for each individual chosen event.. Use if statements then the append the strings together using "1" . "2" for example, (another example above)
+//
+
+
 //  $result = $conn - > query ( $sql );
 //  if ( $result - > num_rows > 0) {
 //  // output data of each row
