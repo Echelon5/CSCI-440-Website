@@ -44,14 +44,11 @@
 					<div style="width:100%; height:95%; position:fixed   border: 1px solid white; background-color: #3F0000;">
 						<div style="width:70%; overflow-y:scroll; height:75%; position:fixed; background-color: #3F0000; border: 1px solid black;">
 							<?php
-								//$servername = "localhost";
-								//$username = "davidm";
-								//$password = "password";
-								//$dbname = "solartest";
+
 								$host = "localhost";
 								$username = "davidm";
 								$password = "password";
-								$dbname = "solartest";
+								$dbname = "solar";
 
 								// Create connection
 								$conn = new mysqli($host, $username, $password, $dbname);
