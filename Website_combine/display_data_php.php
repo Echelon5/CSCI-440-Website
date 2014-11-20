@@ -144,6 +144,9 @@
 									$event_string = $event_string . ",ss";
 								}
 								
+								$event_string= ltrim ($event_string, ',');
+								
+								
 								$sql_where = "";
 								$sql_or = FALSE;
 								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1)
