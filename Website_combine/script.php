@@ -126,8 +126,8 @@ $var = shell_exec ( $final_input );
 
 $var1 = system($final_input);
 
-echo $var
-echo $var1
+echo "$var";
+echo "$var1";
 
 //
 ?>
