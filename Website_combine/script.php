@@ -122,7 +122,8 @@ echo "final_input = '$final_input'<br><br>";
 
 //bash here
 
-string shell_exec ( string $final_input );
+$output = shell_exec ( $final_input );
+echo "<pre>$output</pre>";
 
 //
 
@@ -152,6 +153,8 @@ string shell_exec ( string $final_input );
 //SQL Search Between Start Timestamp and End Timestamp
 //For sql String, Search for each individual chosen event.. Use if statements then the append the strings together using "1" . "2" for example, (another example above)
 //
+
+
 
 
 //  $result = $conn - > query ( $sql );
@@ -197,7 +200,7 @@ string shell_exec ( string $final_input );
 
 
 
-mysqli_close ( $conn );
+//mysqli_close ( $conn );
 
 
 ?>
