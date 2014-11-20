@@ -57,6 +57,56 @@
 									die("Connection failed: " . $conn->connect_error);
 								} 
 
+								
+								$channel_number = $_GET['channel'];  					//Radial: Channel Number
+								//echo "Channel Number = $channel_number<br><br>";
+
+								$selected_measurement = $_GET['measurement'];  			//Radial: Measurement Type
+								//echo "Selected measurement = $selected_measurement<br>";
+
+								$start_date = $_GET['start'];  							//Date: Start Time (mm/dd/yyyy)
+								//echo "Start time = $start_date<br>";
+
+								$start_hour = $_GET['hour_start']; 		 				//Integer: Hour
+								//echo "Start hour = $start_hour<br>";
+
+								$start_minute = $_GET['minute_start'];  				//Integer: Minute
+								//echo "Start minute = $start_minute<br><br>";
+
+								$end_date = $_GET['end'];  								//Date: End Time (mm/dd/yyy)
+								//echo "End time = $end_date<br>";
+
+								$end_hour = $_GET['hour_end'];  						//Integer: Hour
+								//echo "End hour = $end_hour<br>";
+
+								$end_minute = $_GET['minute_end'];  					//Integer: Minute
+								//echo "End minute = $end_minute<br><br>";
+								
+								
+								
+
+								if ($selected_channel == 193)
+								{
+									$start_hour_min = $start_hour . ":" . $start_minute . ":" . "8";
+									$end_hour_min = $end_hour . ":" . $end_minute . ":" . "8";			//hour minute second
+									$start_date_min = $start_date;
+									$end_date_min = $end_date;
+								}
+								else
+								{
+									$start_hour_min = $start_hour . ":" . $start_minute . ":" . "11";
+									$end_hour_min = $end_hour . ":" . $end_minute . ":" . "11";	
+									$start_date_min = $start_date;
+									$end_date_min = $end_date;
+								}
+																
+								
+								$mytime = strtotime(sprintf('%s %s',sate('Y-m-d', $start_date_min),date('H:i',   $start_hour_min)));
+								echo "$mytime";
+								
+								
+								
+								
 								$active_region = 0; 
 								$coronal_hole = 0;
 								$filament = 0;
