@@ -48,7 +48,7 @@
 								//$username = "davidm";
 								//$password = "password";
 								//$dbname = "solartest";
-								$host = "joshatron.ddns.net";
+								$host = "localhost";
 								$username = "davidm";
 								$password = "password";
 								$dbname = "solartest";
