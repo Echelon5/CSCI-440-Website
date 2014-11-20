@@ -22,7 +22,7 @@
 				<!-- sidebar -->
 				<td valign="top" style="width: 10%; border: 1px solid black; height: 80%; background-color: #3F0000; color: #C0C0C0;"><br>
 					<a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
-					<a href="new_search.html" style="text-decoration : none; color : silver;">New Search</a><br>
+					<a href="new_search.php" style="text-decoration : none; color : silver;">New Search</a><br>
 					<a><u>Display Data</u></a><br>
 				</td>
 					
@@ -56,11 +56,18 @@
 								// Create connection
 								$conn = new mysqli($host, $username, $password, $dbname);
 								// Check connection
-								if ($conn->connect_error) {die("Connection failed: " . $conn->connect_error);} 
+								if ($conn->connect_error) {
+									die("Connection failed: " . $conn->connect_error);
+								} 
 
+								$active_region = 0; 
+								$coronal_hole = 0;
+								$filament = 0;
+								$flare = 0;
+								$sigmoid = 0;
+								$sunspot = 0;
 								
-								
-								
+								$event_string = "";
 								
 								if (isset($_GET['event_ar'])) {							// Boolean: Shown Events
 									$active_region = 1;
@@ -88,56 +95,62 @@
 								}
 								
 								$sql_where = "";
-								$sql_or = 0;
-								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1){
+								$sql_or = FALSE;
+								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1)
 								{
 									$sql_where = $sql_where . "WHERE(";
 									
 									if($active_region == 1){
-										if($sql_or == 1){
-											$sql_where = $sql_where . " EventType=\'AR\'";
+										if($sql_or == FALSE){
+											$sql_where = $sql_where . " EventType='AR'";
+											$sql_or = TRUE;
 										}else{
-											$sql_where = $sql_where . " OR EventType=\'AR\'";
+											$sql_where = $sql_where . " OR EventType='AR'";
 										}
 									}
 									
 									if($coronal_hole == 1){
-										if($sql_or == 1){
-											$sql_where = $sql_where . " EventType=\'CH\'";
+										if($sql_or == FALSE){
+											$sql_where = $sql_where . " EventType='CH'";
+											$sql_or = TRUE;
 										}else{
-											$sql_where = $sql_where . " OR EventType=\'CH\'";
+											$sql_where = $sql_where . " OR EventType='CH'";
 										}
 									}
 									
 									if($filament == 1){
-										if($sql_or == 1){
-											$sql_where = $sql_where . " EventType=\'FI\'";
+										if($sql_or == FALSE){
+											$sql_where = $sql_where . " EventType='FI'";
+											$sql_or = TRUE;
 										}else{
-											$sql_where = $sql_where . " OR EventType=\'FI\'";
+											$sql_where = $sql_where . " OR EventType='FI'";
 										}
 									}
 									
 									if($flare == 1){
-										if($sql_or == 1){
-											$sql_where = $sql_where . " EventType=\'FL\'";
+										if($sql_or == FALSE){
+											$sql_where = $sql_where . " EventType='FL'";
+											$sql_or = TRUE;
 										}else{
-											$sql_where = $sql_where . " OR EventType=\'FL\'";
+											$sql_where = $sql_where . " OR EventType='FL'";
 										}
 									}
 
 									if($sigmoid == 1){
-										if($sql_or == 1){
-											$sql_where = $sql_where . " EventType=\'SG\'";
+										if($sql_or == FALSE){
+											$sql_where = $sql_where . " EventType='SG'";
+											$sql_or = TRUE;
 										}else{
-											$sql_where = $sql_where . " OR EventType=\'SG\'";
+											$sql_where = $sql_where . " OR EventType='SG'";
 										}
 									}
 									
 									if($sunspot == 1){
-										if($sql_or == 1){
-											$sql_where = $sql_where . " EventType=\'SS\'";
+										if($sql_or == FALSE){
+											$sql_where = $sql_where . " EventType='SS'";
+											$sql_or = TRUE;
 										}else{
-											$sql_where = $sql_where . " OR EventType=\'SS\'";
+											$sql_where = $sql_where . " OR EventType='SS'";
 										}
 									}
 									$sql_where = $sql_where . ")";
@@ -147,9 +160,15 @@
 								//$event_string= ltrim ($event_string, ',');
 								
 								$sql = "SELECT StartTime, EndTime, EventType FROM Event $sql_where";
+								
 								$result = $conn->query($sql);
+								if($result == FALSE){
+									echo "null";
+									echo "$sql";
 
-								if ($result->num_rows > 0) {
+								}
+
+								elseif ($result && $result->num_rows) {
 									 echo "<table width=\"100%\",height=\"80%\", id=\"myTable\", align = \"left\" style=\"color:white; background-color: #3F0000;\">";
 									 // output data of each row
 									 while($row = $result->fetch_assoc()) {
