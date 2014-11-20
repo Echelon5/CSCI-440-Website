@@ -122,8 +122,12 @@ echo "final_input = '$final_input'<br><br>";
 
 //bash here
 
-shell_exec ( $final_input );
-system($final_input);
+$var = shell_exec ( $final_input );
+
+$var1 = system($final_input);
+
+echo $var
+echo $var1
 
 //
 ?>
