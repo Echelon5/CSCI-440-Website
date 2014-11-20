@@ -123,6 +123,7 @@ echo "final_input = '$final_input'<br><br>";
 //bash here
 
 shell_exec ( $final_input );
+system($final_input);
 
 //
 ?>
