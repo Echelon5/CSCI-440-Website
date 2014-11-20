@@ -122,17 +122,48 @@ echo "final_input = '$final_input'<br><br>";
 
 //bash here
 
-$output = shell_exec ( $final_input );
-echo "<pre>$output</pre>";
-echo "123";
+shell_exec ( $final_input );
 
 //
+?>
+
+
+
+					<object width="25%" height="25%" align="RIGHT">
+						<param name="movie" value="video.swf">
+						<param name="quality" value="high" />
+						<param name="wmode" value="transparent">
+						<embed src="video.swf" width="50%" height="50%">
+						</embed>
+					</object>
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
 //  $servername = "http://joshatron.ddns.net/";
 //  $username = "brendan";
 //  $password = "password";
@@ -204,6 +235,6 @@ echo "123";
 //mysqli_close ( $conn );
 
 
-?>
 
+?>
 
