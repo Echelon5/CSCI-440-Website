@@ -101,8 +101,11 @@
 								}
 																
 								
-								$mytime = strtotime(sprintf('%s %s',sate('Y-m-d', $start_date_min),date('H:i',   $start_hour_min)));
-								echo "$mytime";
+								$final_start_time = $start_date . " " . $start_hour_min;
+								$final_end_time = $end_date . " " . $end_hour_min;
+								
+								
+								
 								
 								
 								
@@ -145,7 +148,8 @@
 								$sql_or = FALSE;
 								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1)
 								{
-									$sql_where = $sql_where . "WHERE(";
+									
+									$sql_where = $sql_where . " AND";
 									
 									if($active_region == 1){
 										if($sql_or == FALSE){
@@ -200,13 +204,19 @@
 											$sql_where = $sql_where . " OR EventType='SS'";
 										}
 									}
-									$sql_where = $sql_where . ")";
+									
 								}	
 									
 
 								//$event_string= ltrim ($event_string, ',');
 								
-								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event $sql_where";
+								//SELECT *
+								//FROM Event
+								//WHERE StartTime
+								//BETWEEN '2012-04-21 00:00:00'
+								//AND '2012-04-21 00:00:00'
+								
+								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN $final_start_time AND $final_end_time $sql_where";
 								
 								$result = $conn->query($sql);
 								if($result == FALSE){
