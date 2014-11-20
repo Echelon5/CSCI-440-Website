@@ -216,7 +216,7 @@
 								//BETWEEN '2012-04-21 00:00:00'
 								//AND '2012-04-21 00:00:00'
 								
-								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN $final_start_time AND $final_end_time $sql_where";
+								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where";
 								
 								$result = $conn->query($sql);
 								if($result == FALSE){
