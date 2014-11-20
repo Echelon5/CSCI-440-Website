@@ -32,11 +32,11 @@
 					<!-- Header Column -->
 					<table style="width:99%; height: 5%; border: 1px solid black; background-color: #2a0000; color: white;">
 						<tr>
-							<td style="border:1px solid black;width:20%">EventID</td>
-							<td style="border:1px solid black;width:20%">StartTime</td> 
-							<td style="border:1px solid black;width:20%">EndTime</td>
-							<td style="border:1px solid black;width:20%">EventType</td>
-							<td style="border:1px solid black;width:20%">IID</td>
+							
+							<td style="border:1px solid black;width:33%">StartTime</td> 
+							<td style="border:1px solid black;width:33%">EndTime</td>
+							<td style="border:1px solid black;width:33%">EventType</td>
+							
 						</tr>
 					</table>
 					
@@ -44,8 +44,11 @@
 					<div style="width:100%; height:95%; position:fixed   border: 1px solid white; background-color: #3F0000;">
 						<div style="width:70%; overflow-y:scroll; height:75%; position:fixed; background-color: #3F0000; border: 1px solid black;">
 							<?php
-								//$host = "joshatron.ddns.net";
-								$host = "localhost";
+								//$servername = "localhost";
+								//$username = "davidm";
+								//$password = "password";
+								//$dbname = "solartest";
+								$host = "joshatron.ddns.net";
 								$username = "davidm";
 								$password = "password";
 								$dbname = "solartest";
@@ -55,14 +58,102 @@
 								// Check connection
 								if ($conn->connect_error) {die("Connection failed: " . $conn->connect_error);} 
 
-								$sql = "SELECT * FROM Event";
+								
+								
+								
+								
+								if (isset($_GET['event_ar'])) {							// Boolean: Shown Events
+									$active_region = 1;
+									$event_string = $event_string . ",ar";
+								}
+								if (isset($_GET['event_ch'])) {
+									$coronal_hole = 1;
+									$event_string = $event_string . ",ch";
+								}
+								if (isset($_GET['event_fi'])) {
+									$filament = 1;
+									$event_string = $event_string . ",fi";
+								}
+								if (isset($_GET['event_fl'])) {
+									$flare = 1;
+									$event_string = $event_string . ",fl";
+								}
+								if (isset($_GET['event_sg'])) {
+									$sigmoid = 1;
+									$event_string = $event_string . ",sg";
+								}
+								if (isset($_GET['event_ss'])) {
+									$sunspot = 1;
+									$event_string = $event_string . ",ss";
+								}
+								
+								$sql_where = "";
+								$sql_or = 0;
+								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1){
+								{
+									$sql_where = $sql_where . "WHERE(";
+									
+									if($active_region == 1){
+										if($sql_or == 1){
+											$sql_where = $sql_where . " EventType=\'AR\'";
+										}else{
+											$sql_where = $sql_where . " OR EventType=\'AR\'";
+										}
+									}
+									
+									if($coronal_hole == 1){
+										if($sql_or == 1){
+											$sql_where = $sql_where . " EventType=\'CH\'";
+										}else{
+											$sql_where = $sql_where . " OR EventType=\'CH\'";
+										}
+									}
+									
+									if($filament == 1){
+										if($sql_or == 1){
+											$sql_where = $sql_where . " EventType=\'FI\'";
+										}else{
+											$sql_where = $sql_where . " OR EventType=\'FI\'";
+										}
+									}
+									
+									if($flare == 1){
+										if($sql_or == 1){
+											$sql_where = $sql_where . " EventType=\'FL\'";
+										}else{
+											$sql_where = $sql_where . " OR EventType=\'FL\'";
+										}
+									}
+
+									if($sigmoid == 1){
+										if($sql_or == 1){
+											$sql_where = $sql_where . " EventType=\'SG\'";
+										}else{
+											$sql_where = $sql_where . " OR EventType=\'SG\'";
+										}
+									}
+									
+									if($sunspot == 1){
+										if($sql_or == 1){
+											$sql_where = $sql_where . " EventType=\'SS\'";
+										}else{
+											$sql_where = $sql_where . " OR EventType=\'SS\'";
+										}
+									}
+									$sql_where = $sql_where . ")";
+								}	
+									
+
+								//$event_string= ltrim ($event_string, ',');
+								
+								$sql = "SELECT StartTime, EndTime, EventType FROM Event $sql_where";
 								$result = $conn->query($sql);
 
 								if ($result->num_rows > 0) {
 									 echo "<table width=\"100%\",height=\"80%\", id=\"myTable\", align = \"left\" style=\"color:white; background-color: #3F0000;\">";
 									 // output data of each row
 									 while($row = $result->fetch_assoc()) {
-										 echo "<tr><td style=\"border:1px solid black;width:20%\">" . $row["EventID"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EventType"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["IID"]. "</td></tr>";
+										 echo "<tr><td style=\"border:1px solid black;width:33%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:33%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:33%\">" . $row["EventType"]. "</td></tr>";
 									 }
 									 echo "</table>";
 								} else {
@@ -117,7 +208,7 @@
 					</object>
 
 					
-					<!-- DEBUG <button onclick="myFunction()">Try it</button> -->
+					<!-- DEBUG <button onclick="myFunction()">Try it</button> 
 					<script>
 						function myFunction() {
 							var table = document.getElementById("myTable");
@@ -127,7 +218,7 @@
 							cell1.innerHTML = "NEW CELL1";
 							cell2.innerHTML = "NEW CELL2";
 						}
-					</script>
+					</script>-->
 				</td>																							
 			</tr>		
 			
