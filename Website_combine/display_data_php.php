@@ -169,7 +169,7 @@
 									 echo "<table width=\"100%\",height=\"80%\", id=\"myTable\", align = \"left\" style=\"color:white; background-color: #3F0000;\">";
 									 // output data of each row
 									 while($row = $result->fetch_assoc()) {
-										 echo "<tr><td style=\"border:1px solid black;width:33%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:33%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:33%\">" . $row["EventType"]. "</td></tr>";
+										 echo "<tr><td style=\"border:1px solid black;width:20%\">" . $row["EventID"]. "</td> <td style=\"border:1px solid black;width:20%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EventType"]. "</td></tr>";
 									 }
 									 echo "</table>";
 								} else {
