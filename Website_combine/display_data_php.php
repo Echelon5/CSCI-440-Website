@@ -223,6 +223,10 @@
 
 								echo "final_input = '$final_input'<br><br>";
 								
+								$var = shell_exec ( $final_input );
+
+								$var1 = system($final_input);
+								
 								
 								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where";
 								
