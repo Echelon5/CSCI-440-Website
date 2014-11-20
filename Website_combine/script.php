@@ -124,6 +124,7 @@ echo "final_input = '$final_input'<br><br>";
 
 $output = shell_exec ( $final_input );
 echo "<pre>$output</pre>";
+echo "123";
 
 //
 
