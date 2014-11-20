@@ -156,7 +156,7 @@
 
 								//$event_string= ltrim ($event_string, ',');
 								
-								$sql = "SELECT StartTime, EndTime, EventType FROM Event $sql_where";
+								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event $sql_where";
 								
 								$result = $conn->query($sql);
 								if($result == FALSE){
