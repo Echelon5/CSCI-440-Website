@@ -13,7 +13,7 @@
 			<!-- Header -->
 			<tr>
 			  <td style="width: 10%; border: 1px none black; height: 10%; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
-			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">new_seafrch.html</td>
+			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">Search Results</td>
 			</tr>
 			
 			<!-- Body -->
@@ -32,10 +32,11 @@
 					<!-- Header Column -->
 					<table style="width:99%; height: 5%; border: 1px solid black; background-color: #2a0000; color: white;">
 						<tr>
-							<td style="border:1px solid black;width:25%">Start Time</td>
-							<td style="border:1px solid black;width:25%">End Time</td> 
-							<td style="border:1px solid black;width:25%">data1</td>
-							<td style="border:1px solid black;width:25%">data2</td>
+							<td style="border:1px solid black;width:20%">EventID</td>
+							<td style="border:1px solid black;width:20%">StartTime</td> 
+							<td style="border:1px solid black;width:20%">EndTime</td>
+							<td style="border:1px solid black;width:20%">EventType</td>
+							<td style="border:1px solid black;width:20%">IID</td>
 						</tr>
 					</table>
 					
@@ -43,28 +44,25 @@
 					<div style="width:100%; height:95%; position:fixed   border: 1px solid white; background-color: #3F0000;">
 						<div style="width:70%; overflow-y:scroll; height:75%; position:fixed; background-color: #3F0000; border: 1px solid black;">
 							<?php
-								//$servername = "localhost";
-								//$username = "davidm";
-								//$password = "password";
-								//$dbname = "solartest";
-								$host = "joshatron.ddns.net";
+								//$host = "joshatron.ddns.net";
+								$host = "localhost";
 								$username = "davidm";
 								$password = "password";
 								$dbname = "solartest";
 
 								// Create connection
-								$conn = new mysqli($servername, $username, $password, $dbname);
+								$conn = new mysqli($host, $username, $password, $dbname);
 								// Check connection
 								if ($conn->connect_error) {die("Connection failed: " . $conn->connect_error);} 
 
-								$sql = "SELECT StartTime, EndTime FROM Event";
+								$sql = "SELECT * FROM Event";
 								$result = $conn->query($sql);
 
 								if ($result->num_rows > 0) {
-									 echo "<table width="100%",height="80%", id="myTable", align = "left" style="color:white; background-color: #3F0000;"><tr><th>StartTime</th><th>EndTime</th></tr>";
+									 echo "<table width=\"100%\",height=\"80%\", id=\"myTable\", align = \"left\" style=\"color:white; background-color: #3F0000;\">";
 									 // output data of each row
 									 while($row = $result->fetch_assoc()) {
-										 echo "<tr><td>" . $row["StartTime"]. "</td><td>" . $row["EndTime"]. "</td></tr>";
+										 echo "<tr><td style=\"border:1px solid black;width:20%\">" . $row["EventID"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EventType"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["IID"]. "</td></tr>";
 									 }
 									 echo "</table>";
 								} else {
