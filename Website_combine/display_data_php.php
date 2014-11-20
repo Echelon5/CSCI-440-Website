@@ -216,6 +216,11 @@
 								//BETWEEN '2012-04-21 00:00:00'
 								//AND '2012-04-21 00:00:00'
 								
+								$final_input = "getVideo " . $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
+
+								echo "final_input = '$final_input'<br><br>";
+								
+								
 								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where";
 								
 								$result = $conn->query($sql);
