@@ -152,7 +152,7 @@
 								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1)
 								{
 									
-									$sql_where = $sql_where . " AND";
+									$sql_where = $sql_where . "";
 									
 									if($active_region == 1){
 										if($sql_or == FALSE){
@@ -222,7 +222,7 @@
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
-								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where ORDER BY StartTime ASC";
+								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' AND ($sql_where) ORDER BY StartTime ASC";
 								
 								$result = $conn->query($sql);
 								if($result == FALSE){
