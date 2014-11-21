@@ -3,7 +3,7 @@
 		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
 			<tr>
 			  <td style="width: 10%; border: 2px none orange; height: 120px; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
-			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">new_search.php</td>
+			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">New Search</td>
 		  </tr>
 			<tr>																			<!-- header ---->	
 				<!--<td colspan="3" style="width: 100$; border: 2px dashed orange; height:10%;">-->
