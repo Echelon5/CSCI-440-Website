@@ -213,15 +213,13 @@
 
 								//$event_string= ltrim ($event_string, ',');
 								
-								//SELECT *
-								//FROM Event
-								//WHERE StartTime
-								//BETWEEN '2012-04-21 00:00:00'
-								//AND '2012-04-21 00:00:00'
+
 								
 								$final_input = "getVideo " . $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
 
-								echo "final_input = '$final_input'<br><br>";
+								
+								// DEBUG - SHOW BASH COMMAND
+								//echo "final_input = '$final_input'<br><br>";
 								
 								
 								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where";
@@ -237,7 +235,7 @@
 									 echo "<table width=\"100%\",height=\"80%\", id=\"myTable\", align = \"left\" style=\"color:white; background-color: #3F0000;\">";
 									 // output data of each row
 									 while($row = $result->fetch_assoc()) {
-										 echo "<tr><td style=\"border:1px solid black;width:20%\">" . $row["EventID"]. "</td> <td style=\"border:1px solid black;width:20%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:20%\">" . $row["EventType"]. "</td></tr>";
+										 echo "<tr> <td style=\"border:1px solid black;width:33%\">" . $row["StartTime"]. "</td>   <td style=\"border:1px solid black;width:33%\">" . $row["EndTime"]. "</td>   <td style=\"border:1px solid black;width:33%\">" . $row["EventType"]. "</td></tr>";
 									 }
 									 echo "</table>";
 								} else {
