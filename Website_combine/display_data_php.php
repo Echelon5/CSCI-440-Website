@@ -222,7 +222,7 @@
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
-								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where SORT BY StartTime";
+								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' $sql_where ORDER BY StartTime ASC";
 								
 								$result = $conn->query($sql);
 								if($result == FALSE){
