@@ -221,13 +221,13 @@
 								// DEBUG - SHOW BASH COMMAND
 								include('Net/SSH2.php');
 
-								$ssh = new Net_SSH2('10.0.0.20');
+								$ssh = new Net_SSH2('joshatron.ddns.net');
 								if (!$ssh->login('solar', 'sailor')) {
 								exit('Login Failed');
 }
 
 								echo $ssh->exec('pwd');
-								echo $ssh->exec('mk abc123abc');
+								echo $ssh->exec('mkdir abc123abc');
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
