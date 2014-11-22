@@ -45,7 +45,7 @@
 						<div style="width:70%; overflow-y:scroll; height:75%; position:fixed; background-color: #3F0000; border: 1px solid black;">
 							<?php
 
-								$host = "localhost";
+								$host = "joshatron.ddns.net";
 								$username = "davidm";
 								$password = "password";
 								$dbname = "solar";
@@ -324,34 +324,34 @@
 						
 						
 						<tr>
-							<td style="background-color: red"><!-- color --></td>
+							<td style="background-color: red; width: 10px; height: 10px;"><!-- color --></td>
 							
-							<td>Active Region</td>
+							<td style ="padding: 10px;">Active Region</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: blue"><!-- color --></td>
-							<td>Coronal Hole</td>
+							<td style="background-color: blue; width: 10px; height: 10px;"><!-- color --></td>
+							<td style ="padding: 10px;">Coronal Hole</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: green"><!-- color --></td>
-							<td>Filament</td>
+							<td style="background-color: green; width: 10px; height: 10px;"><!-- color --></td>
+							<td style ="padding: 10px;">Filament</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: purple"><!-- color --></td>
-							<td>Flare</td>
+							<td style="background-color: purple; width: 10px; height: 10px;"><!-- color --></td>
+							<td style ="padding: 10px;">Flare</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: yellow"<!-- color --></td>
-							<td>Sigmoid</td>
+							<td style="background-color: yellow; width: 10px; height: 10px;"<!-- color --></td>
+							<td style ="padding: 10px;">Sigmoid</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: pink"><!-- color --></td>
-							<td>Sunspot</td>
+							<td style="background-color: pink; width: 10px; height: 10px;"><!-- color --></td>
+							<td style ="padding: 10px;">Sunspot</td>
 						</tr>
 
 					</table>
