@@ -227,18 +227,18 @@
 							<br>
 											  
 							<b>Measurement Type</b><br>
-							<input type="radio" name="measurement" value="entropy">Entropy<br>
-							<input type="radio" name="measurement" value="mean">Mean<br>
-							<input type="radio" name="measurement" value="std_deviation">Std. Deviation<br>
-							<input type="radio" name="measurement" value="fractal_dim">Fractal Dim.<br>
-							<input type="radio" name="measurement" value="skewness">Skewness<br>
-							<input type="radio" name="measurement" value="kurtosis">Kurtosis<br>
-							<input type="radio" name="measurement" value="uniformity">Uniformity<br>
-							<input type="radio" name="measurement" value="rel_smoothness">Rel. Smoothness<br>
-							<input type="radio" name="measurement" value="t_contrast">T. Contrast<br>
-							<input type="radio" name="measurement" value="t_directionality">T. Directionality<br>
-							<input type="radio" name="measurement" value="raw">Raw data<br>
-							<input type="radio" name="measurement" value="none" checked="checked">None<br>
+							<input type="radio" name="measurement" value="Entropy">Entropy<br>
+							<input type="radio" name="measurement" value="Mean">Mean<br>
+							<input type="radio" name="measurement" value="StandardDiviation">Std. Deviation<br>
+							<input type="radio" name="measurement" value="FractalDimension">Fractal Dim.<br>
+							<input type="radio" name="measurement" value="Skewness">Skewness<br>
+							<input type="radio" name="measurement" value="Kurtosis">Kurtosis<br>
+							<input type="radio" name="measurement" value="Uniformity">Uniformity<br>
+							<input type="radio" name="measurement" value="RelativeSmoothness">Rel. Smoothness<br>
+							<input type="radio" name="measurement" value="TContrast">T. Contrast<br>
+							<input type="radio" name="measurement" value="TDirectionality">T. Directionality<br>
+							<input type="radio" name="measurement" value="Raw">Raw data<br>
+							<input type="radio" name="measurement" value="None" checked="checked">None<br>
 							<br></br>
 							
 							<input type="submit">
