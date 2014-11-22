@@ -2,7 +2,7 @@
 
 rm ~/pngs/*
 
-if java -jar getVideo.jar $1 $2 $3 $4 $5 $6 $7 ; then
+if java -jar /home/solar/ImageOps.jar $1 $2 $3 $4 $5 $6 $7 ; then
     rm ~/CSCI-440-Website/Website_combine/video.swf
     ffmpeg -f image2 -i /home/solar/pngs/image%d.png /home/solar/CSCI-440-Website/Website_combine/video.swf
 fi
