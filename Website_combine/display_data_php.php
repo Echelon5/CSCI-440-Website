@@ -237,8 +237,7 @@
 								
 
 								
-								$final_input = "getVideo " .  $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
-								echo($final_input);
+								$final_input = "getVideo " . $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
 								
 
 								
