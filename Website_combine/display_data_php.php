@@ -121,30 +121,35 @@
 								
 								if (isset($_GET['event_ar'])) {							// Boolean: Shown Events
 									$active_region = 1;
-									$event_string = $event_string . ",ar";
+									$event_string = $event_string . ",AR";
 								}
 								if (isset($_GET['event_ch'])) {
 									$coronal_hole = 1;
-									$event_string = $event_string . ",ch";
+									$event_string = $event_string . ",CH";
 								}
 								if (isset($_GET['event_fi'])) {
 									$filament = 1;
-									$event_string = $event_string . ",fi";
+									$event_string = $event_string . ",FI";
 								}
 								if (isset($_GET['event_fl'])) {
 									$flare = 1;
-									$event_string = $event_string . ",fl";
+									$event_string = $event_string . ",FL";
 								}
 								if (isset($_GET['event_sg'])) {
 									$sigmoid = 1;
-									$event_string = $event_string . ",sg";
+									$event_string = $event_string . ",SG";
 								}
 								if (isset($_GET['event_ss'])) {
 									$sunspot = 1;
-									$event_string = $event_string . ",ss";
+									$event_string = $event_string . ",SS";
 								}
 								
 								$event_string= ltrim ($event_string, ',');
+								
+								if ($event_string == "")
+								{
+								$event_string = "none";
+								}
 								
 								
 								$sql_where = "";
@@ -232,8 +237,8 @@
 								
 
 								
-								$final_input = "getVideo " . $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
-
+								$final_input = "getVideo " .  $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
+								echo($final_input);
 								
 
 								
