@@ -226,7 +226,10 @@
 								
 								//echo "final_input = '$final_input'<br><br>";
 								
-								$message=shell_exec("/getVideoScript 2>&1");
+								//$message=shell_exec("/getVideoScript 2>&1");
+								//print_r($message);
+								
+								$message=shell_exec("/home/solar/CSCI-440-Website/Website_combine/getVideoScript/getVideo 2>&1");
 								print_r($message);
 								
 								
