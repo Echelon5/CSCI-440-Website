@@ -324,7 +324,9 @@
 						
 						
 						<tr>
-							<td style="background-color: red; width: 3%; height: 3px;"><!-- color --></td>
+							<td><!-- color -->
+								<div style="width:5px;height:5px;border:1px solid #000;"></div>
+							</td>
 							
 							<td style ="padding: 10px;height: 3px;">Active Region</td>
 						</tr>
