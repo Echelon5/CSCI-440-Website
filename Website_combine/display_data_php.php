@@ -318,10 +318,12 @@
 					
 						<!-- Row 1 -->
 						<th colspan="2" align="left">
-							<?php echo "Measurement: $selected_measurement \n" ?>
-							<?php echo "Channel: $channel_number" ?>
+							<?php echo "Measurement: $selected_measurement" ?>
 						<th>
 						
+						<th colspan="2" align="left">
+							<?php echo "Channel: $channel_number" ?>
+						<th>						
 						
 						<tr>
 							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: red;"></div></td>
