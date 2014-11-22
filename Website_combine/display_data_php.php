@@ -45,7 +45,7 @@
 						<div style="width:70%; overflow-y:scroll; height:75%; position:fixed; background-color: #3F0000; border: 1px solid black;">
 							<?php
 
-								$host = "joshatron.ddns.net";
+								$host = "localhost";
 								$username = "davidm";
 								$password = "password";
 								$dbname = "solar";
