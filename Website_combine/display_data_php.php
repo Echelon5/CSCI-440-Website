@@ -314,17 +314,47 @@
 					</object>
 
 					
-					<!-- DEBUG <button onclick="myFunction()">Try it</button> 
-					<script>
-						function myFunction() {
-							var table = document.getElementById("myTable");
-							var row = table.insertRow(0);
-							var cell1 = row.insertCell(0);
-							var cell2 = row.insertCell(1);
-							cell1.innerHTML = "NEW CELL1";
-							cell2.innerHTML = "NEW CELL2";
-						}
-					</script>-->
+					<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+					
+						<!-- Row 1 -->
+						<th>
+							<?php echo "$selected_measurement" ?>
+							<?php echo "$channel_number" ?>
+						<th>
+						
+						
+						<tr>
+							<td style="background-color: red"><!-- color --></td>
+							
+							<td>Active Region</td>
+						</tr>
+						
+						<tr>
+							<td style="background-color: blue"><!-- color --></td>
+							<td>Coronal Hole</td>
+						</tr>
+						
+						<tr>
+							<td style="background-color: green"><!-- color --></td>
+							<td>Filament</td>
+						</tr>
+						
+						<tr>
+							<td style="background-color: purple"><!-- color --></td>
+							<td>Flare</td>
+						</tr>
+						
+						<tr>
+							<td style="background-color: yellow"<!-- color --></td>
+							<td>Sigmoid</td>
+						</tr>
+						
+						<tr>
+							<td style="background-color: pink"><!-- color --></td>
+							<td>Sunspot</td>
+						</tr>
+
+					</table>
 				</td>																							
 			</tr>		
 			
