@@ -318,25 +318,7 @@
 					
 						<!-- Row 1 -->
 						<th colspan="2">
-						<?php
-							if (selected_measurement == StandardDiviation)
-							 echo "Measurement: Std. Deviation \n";
-							else if (selected_measurement == FractalDimension)
-							 echo "Measurement: Fractal Dim. \n";
-							else if (selected_measurement == RelativeSmoothness)
-							 echo "Measurement: Rel. Smoothness \n";
-							else if (selected_measurement == TContrast)
-							 echo "Measurement: T. Contrast \n";
-							else if (selected_measurement == TDirectionality)
-							 echo "Measurement: T. Directionality \n";
-							else if (selected_measurement == Raw)
-							 echo "Measurement: Raw Data \n";
-							 else
-							{
-							
-							echo "Measurement: $selected_measurement \n";
-							}
-						?>	
+							<?php echo "Measurement: $selected_measurement \n" ?>
 							<?php echo "Channel: $channel_number" ?>
 						<th>
 						
