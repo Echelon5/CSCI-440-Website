@@ -226,6 +226,8 @@
 								
 								//echo "final_input = '$final_input'<br><br>";
 								
+								$old_path = getcwd();
+								print_r($old_path);
 								$message=shell_exec("/getVideoScript 2>&1");
 								print_r($message);
 								
