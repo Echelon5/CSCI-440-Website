@@ -219,8 +219,15 @@
 
 								
 								// DEBUG - SHOW BASH COMMAND
-								shell_exec ( "touch reallyLongFileName" );
-								system		 ("touch reallyLongFileName");
+								include('Net/SSH2.php');
+
+								$ssh = new Net_SSH2('joshatron.ddns.net');
+								if (!$ssh->login('solar', 'sailors')) {
+								exit('Login Failed');
+}
+
+								echo $ssh->exec('pwd');
+								echo $ssh->exec('mk abc123abc');
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
