@@ -149,6 +149,21 @@
 								
 								$sql_where = "";
 								$sql_or = FALSE;
+								
+								if($active_region == 0 and $coronal_hole == 0 and $filament == 0 and $flare == 0 and $sigmoid == 0 and $sunspot == 0)
+								{
+								$active_region = 1;
+								$coronal_hole = 1;
+								$filament = 1;
+								$flare = 1;
+								$sigmoid = 1;
+								$sunspot = 1;
+								}
+								
+								
+								
+								
+								
 								if($active_region == 1 or $coronal_hole == 1 or $filament == 1 or $flare == 1 or $sigmoid == 1 or $sunspot == 1)
 								{
 									
@@ -208,7 +223,9 @@
 										}
 									}
 									
-								}	
+								}
+
+								
 									
 
 								//$event_string= ltrim ($event_string, ',');
