@@ -4,7 +4,7 @@
 		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Web</title>
 		<link rel="stylesheet" href="css/global.css" type="text/css">
 		<link rel="stylesheet" href="css/display_data.css" type="text/css">
-	</head> 
+	</head>
 	
 	
 	<body style="width: 100%; height: 100%; border: 0; margin: 0">
@@ -45,7 +45,7 @@
 						<div style="width:70%; overflow-y:scroll; height:75%; position:fixed; background-color: #3F0000; border: 1px solid black;">
 							<?php
 
-								$host = "localhost";
+								$host = "joshatron.ddns.net";
 								$username = "davidm";
 								$password = "password";
 								$dbname = "solar";
@@ -314,7 +314,7 @@
 					</object>
 
 					
-					<table style="width: 100%; height: 50%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+					<table style="width: 100%; height: 10%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
 					
 						<!-- Row 1 -->
 						<th>
@@ -324,34 +324,34 @@
 						
 						
 						<tr>
-							<td style="background-color: red; width: 10px; height: 10px;"><!-- color --></td>
+							<td style="background-color: red; width: 3%; height: 3px;"><!-- color --></td>
 							
-							<td style ="padding: 10px;">Active Region</td>
+							<td style ="padding: 10px;height: 3px;">Active Region</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: blue; width: 10px; height: 10px;"><!-- color --></td>
-							<td style ="padding: 10px;">Coronal Hole</td>
+							<td style="background-color: blue; width: 3%; height: 3px;"><!-- color --></td>
+							<td style ="padding: 10px;height: 3px;">Coronal Hole</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: green; width: 10px; height: 10px;"><!-- color --></td>
-							<td style ="padding: 10px;">Filament</td>
+							<td style="background-color: green; width: 3%; height: 3px;"><!-- color --></td>
+							<td style ="padding: 10px;height: 3px;">Filament</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: purple; width: 10px; height: 10px;"><!-- color --></td>
-							<td style ="padding: 10px;">Flare</td>
+							<td style="background-color: purple; width: 3%; height: 3px;"><!-- color --></td>
+							<td style ="padding: 10px;height: 3px;">Flare</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: yellow; width: 10px; height: 10px;"<!-- color --></td>
-							<td style ="padding: 10px;">Sigmoid</td>
+							<td style="background-color: yellow; width: 3%; height: 3px;"<!-- color --></td>
+							<td style ="padding: 10px;height: 3px;">Sigmoid</td>
 						</tr>
 						
 						<tr>
-							<td style="background-color: pink; width: 10px; height: 10px;"><!-- color --></td>
-							<td style ="padding: 10px;">Sunspot</td>
+							<td style="background-color: pink; width: 3%; height: 3px;"><!-- color --></td>
+							<td style ="padding: 10px;height: 3px;">Sunspot</td>
 						</tr>
 
 					</table>
