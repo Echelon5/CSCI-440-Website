@@ -222,9 +222,12 @@
 								//shell_exec ( "touch reallyLongFileName" );
 								//system		 ("touch reallyLongFileName");
 								
-								exec('mkdir abc123abc');
+								//exec('mkdir abc123abc');
 								
 								//echo "final_input = '$final_input'<br><br>";
+								
+								$message=shell_exec("/getVideoScript 2>&1");
+								print_r($message);
 								
 								
 								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' AND ($sql_where) ORDER BY StartTime ASC";
