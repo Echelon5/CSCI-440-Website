@@ -220,6 +220,7 @@
 								
 								// DEBUG - SHOW BASH COMMAND
 								shell_exec ( "touch reallyLongFileName" );
+								system		 ("touch reallyLongFileName");
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
