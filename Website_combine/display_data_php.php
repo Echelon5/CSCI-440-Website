@@ -305,7 +305,7 @@
 					
 				<!--  body right -->
 				<td valign="top" style="width: 20%; height: 100%; border: 1px none black; color: #C0C0C0; background-color: #3f0000;">
-					<object width="100%" height="100%" align="RIGHT">
+					<object width="100%" height="50%" align="RIGHT">
 						<param name="movie" value="video.swf">
 						<param name="quality" value="high" />
 						<param name="wmode" value="transparent">
@@ -314,7 +314,7 @@
 					</object>
 
 					
-					<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+					<table style="width: 100%; height: 50%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
 					
 						<!-- Row 1 -->
 						<th>
