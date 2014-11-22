@@ -317,39 +317,39 @@
 					<table style="width: 100%; height: 10%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
 					
 						<!-- Row 1 -->
-						<th>
+						<th colspan="2">
 							<?php echo "Measurement: $selected_measurement \n" ?>
 							<?php echo "Channel: $channel_number" ?>
 						<th>
 						
 						
 						<tr>
-							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: red;"></div></td>
+							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: red;"></div></td>
 							<td style ="height: 3px;">Active Region</td>
 						</tr>
 						
 						<tr>
-							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: blue;"></div></td>
+							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: blue;"></div></td>
 							<td style ="height: 3px;">Coronal Hole</td>
 						</tr>
 						
 						<tr>
-							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: green;"></div></td>
+							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: green;"></div></td>
 							<td style ="height: 3px;">Filament</td>
 						</tr>
 						
 						<tr>
-							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: purple;"></div></td>
+							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: purple;"></div></td>
 							<td style ="height: 3px;">Flare</td>
 						</tr>
 						
 						<tr>
-							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: yellow;"></div></td>
+							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: yellow;"></div></td>
 							<td style ="height: 3px;">Sigmoid</td>
 						</tr>
 						
 						<tr>
-							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: pink;"></div></td>
+							<td align="center" style="width:30px"><div style="width:25px;height:25px;border:1px solid #000; background-color: pink;"></div></td>
 							<td style ="height: 3px;">Sunspot</td>
 						</tr>
 
