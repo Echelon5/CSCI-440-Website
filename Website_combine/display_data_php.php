@@ -219,15 +219,11 @@
 
 								
 								// DEBUG - SHOW BASH COMMAND
-								include('Net/SSH2.php');
-
-								$ssh = new Net_SSH2('joshatron.ddns.net');
-								if (!$ssh->login('solar', 'sailor')) {
-								exit('Login Failed');
-}
-
-								echo $ssh->exec('pwd');
-								echo $ssh->exec('mkdir abc123abc');
+								//shell_exec ( "touch reallyLongFileName" );
+								//system		 ("touch reallyLongFileName");
+								
+								exec('mkdir abc123abc');
+								
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
