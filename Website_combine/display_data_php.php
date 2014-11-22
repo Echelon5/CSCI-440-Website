@@ -237,13 +237,13 @@
 								
 
 								
-								$final_input = " " .  $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
+								$final_input = "getVideo " .  $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
 								echo($final_input);
 								
 
 								
-								$message=shell_exec("/home/solar/CSCI-440-Website/Website_combine/getVideoScript/getVideo $final_input 2>&1");
-								print_r($message);
+								//$message=shell_exec("/home/solar/CSCI-440-Website/Website_combine/getVideoScript/getVideo 2>&1");
+								//print_r($message);
 								
 								
 								$sql = "SELECT EventID, StartTime, EndTime, EventType FROM Event WHERE StartTime BETWEEN '$final_start_time' AND '$final_end_time' AND ($sql_where) ORDER BY StartTime ASC";
