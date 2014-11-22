@@ -219,7 +219,7 @@
 
 								
 								// DEBUG - SHOW BASH COMMAND
-								shell_exec ( "mkdr abc123abc" );
+								shell_exec ( "touch reallyLongFileName" );
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
