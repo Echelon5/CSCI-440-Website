@@ -318,8 +318,8 @@
 					
 						<!-- Row 1 -->
 						<th>
-							<?php echo "$selected_measurement" ?>
-							<?php echo "$channel_number" ?>
+							<?php echo "Measurement: $selected_measurement \n" ?>
+							<?php echo "Channel: $channel_number" ?>
 						<th>
 						
 						
