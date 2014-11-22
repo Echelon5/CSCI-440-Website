@@ -325,32 +325,32 @@
 						
 						<tr>
 							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: red;"></div></td>
-							<td style ="padding: 10px;height: 3px;">Active Region</td>
+							<td style ="height: 3px;">Active Region</td>
 						</tr>
 						
 						<tr>
 							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: blue;"></div></td>
-							<td style ="padding: 10px;height: 3px;">Coronal Hole</td>
+							<td style ="height: 3px;">Coronal Hole</td>
 						</tr>
 						
 						<tr>
 							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: green;"></div></td>
-							<td style ="padding: 10px;height: 3px;">Filament</td>
+							<td style ="height: 3px;">Filament</td>
 						</tr>
 						
 						<tr>
 							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: purple;"></div></td>
-							<td style ="padding: 10px;height: 3px;">Flare</td>
+							<td style ="height: 3px;">Flare</td>
 						</tr>
 						
 						<tr>
 							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: yellow;"></div></td>
-							<td style ="padding: 10px;height: 3px;">Sigmoid</td>
+							<td style ="height: 3px;">Sigmoid</td>
 						</tr>
 						
 						<tr>
 							<td align="center"><div style="width:25px;height:25px;border:1px solid #000; background-color: pink;"></div></td>
-							<td style ="padding: 10px;height: 3px;">Sunspot</td>
+							<td style ="height: 3px;">Sunspot</td>
 						</tr>
 
 					</table>
