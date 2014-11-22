@@ -317,7 +317,7 @@
 					<table style="width: 100%; height: 10%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
 					
 						<!-- Row 1 -->
-						<th colspan="2">
+						<th colspan="2" align="left">
 							<?php echo "Measurement: $selected_measurement \n" ?>
 							<?php echo "Channel: $channel_number" ?>
 						<th>
