@@ -221,8 +221,8 @@
 								// DEBUG - SHOW BASH COMMAND
 								include('Net/SSH2.php');
 
-								$ssh = new Net_SSH2('joshatron.ddns.net');
-								if (!$ssh->login('solar', 'sailors')) {
+								$ssh = new Net_SSH2('10.0.0.20');
+								if (!$ssh->login('solar', 'sailor')) {
 								exit('Login Failed');
 }
 
