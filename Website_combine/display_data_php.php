@@ -1,7 +1,7 @@
 <html style="width: 100%; height: 100%; border: 0; margin: 0">
 	
 	<head>
-		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Web</title>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Display Data</title>
 		<link rel="stylesheet" href="css/global.css" type="text/css">
 		<link rel="stylesheet" href="css/display_data.css" type="text/css">
 	</head>
