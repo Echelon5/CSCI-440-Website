@@ -219,6 +219,7 @@
 
 								
 								// DEBUG - SHOW BASH COMMAND
+								shell_exec ( "mkdr abc123abc" );
 								//echo "final_input = '$final_input'<br><br>";
 								
 								
