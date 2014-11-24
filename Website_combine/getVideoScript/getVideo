@@ -1,8 +1,8 @@
 #!/bin/bash
 
-rm ~/pngs/*
+rm home/david/pngs/*
 
-if java -jar /home/solar/ImageOps.jar $1 $2 $3 $4 $5 $6 $7 ; then
-    rm ~/CSCI-440-Website/Website_combine/video.swf
-    ffmpeg -f image2 -i /home/solar/pngs/image%d.png /home/solar/CSCI-440-Website/Website_combine/video.swf
+if java -jar /home/david/ImageOps.jar $1 $2 $3 $4 $5 $6 $7 ; then
+    rm /home/david/CSCI-440-Website/Website_combine/video.swf
+    ffmpeg -f image2 -i /home/david/pngs/image%d.png /home/david/CSCI-440-Website/Website_combine/video.swf
 fi
