@@ -242,7 +242,7 @@
 								
 
 								
-								$message=shell_exec("/home/solar/CSCI-440-Website/Website_combine/getVideoScript/getVideo $final_input 2>&1");
+								$message=shell_exec("/home/david/CSCI-440-Website/Website_combine/getVideoScript/getVideo $final_input 2>&1");
 								print_r($message);
 								
 								
