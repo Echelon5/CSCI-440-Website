@@ -336,8 +336,10 @@
 							
 							echo "Measurement: $selected_measurement \n";
 							}
-							<br>
+							
 						?>
+						
+							<br>
 							<?php echo "Channel: $channel_number" ?>
 						<th>
 						
