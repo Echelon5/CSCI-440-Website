@@ -229,7 +229,7 @@
 							<b>Measurement Type</b><br>
 							<input type="radio" name="measurement" value="Entropy">Entropy<br>
 							<input type="radio" name="measurement" value="Mean">Mean<br>
-							<input type="radio" name="measurement" value="StandardDiviation">Std. Deviation<br>
+							<input type="radio" name="measurement" value="StandardDeviation">Std. Deviation<br>
 							<input type="radio" name="measurement" value="FractalDimension">Fractal Dim.<br>
 							<input type="radio" name="measurement" value="Skewness">Skewness<br>
 							<input type="radio" name="measurement" value="Kurtosis">Kurtosis<br>

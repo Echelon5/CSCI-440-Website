@@ -319,7 +319,7 @@
 						<!-- Row 1 -->
 						<th colspan="2">
 							<?php
-							if (selected_measurement == StandardDiviation)
+							if (selected_measurement == StandardDeviation)
 							 {echo "Measurement: Std. Deviation \n";}
 							else if (selected_measurement == FractalDimension)
 							 {echo "Measurement: Fractal Dim. \n";}

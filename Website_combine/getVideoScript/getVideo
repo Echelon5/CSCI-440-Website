@@ -1,6 +1,10 @@
-#/bin/bash
+#!/bin/bash
 
 export DISPLAY=:0
+
+while (( "$(ps aux | grep java | wc -l)" > "1" )) ; do
+    sleep 2
+done
 
 rm /home/david/pngs/* 2> /dev/null
 
