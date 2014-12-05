@@ -1,100 +1,103 @@
 <html style="width: 100%; height: 100%; border: 0; margin: 0">
+
+	<head>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>About SDO</title>
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+		<link rel="stylesheet" href="css/index.css" type="text/css">
+	</head>
+
 	<body style="width: 100%; height: 100%; border: 0; margin: 0">
 		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+			<!-- Top Row: Header -->
 			<tr>
-			  <td style="width: 10%; border: 2px none orange; height: 10%; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
-			  <td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">About SDO</td>
-		  </tr>
-			<tr>																			<!-- header ---->	
-				<!--<td colspan="3" style="width: 100$; border: 2px dashed orange; height:10%;">-->
+				<td style="width: 10%; border: 2px none orange; height: 10%; background-color: #2a0000; color: #C0C0C0; font-size: 0px;">&nbsp;</td>
+				<td colspan="2" style="width: 45%; border: 2px none orange; height: 80px; background-color: #2a0000; color: #C0C0C0; font-size: 60px;">About SDO</td>
+			</tr>
+			<!-- Middle Row: Content -->
+			<tr>		
+				<!-- Content: Sidebar -->
 				<td valign="top"><br>
                   <u>Home</a></u><br>
                   <a href="new_search.php" style="text-decoration : none; color : silver;">New Search</a><br>
-                <a href="display_data_php.php" style="text-decoration : none; color : silver;">Display Data</a><br></td>
-																							<!-- /leftSidebar-->
-				<td style="width: 45%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft -----><!-- end minute_end -->
-				  <div id="heroLeftIntroductionTitle"><big id="btnAboutUs">Introduction<big>&nbsp;</big></big></div>
-                  <div id="heroLeftIntroduction">
-                    <!-- <p>Here, we can describe the purpose of our database, where we get our data, and how the data is currently being used. </p> -->
-                    <p>Our database covers the dataset provided by the Solar Dynamics Observatory, the dataset used ranges from January to June from the year 2012.
-                      The measurements include raw data, which are shown as images, as well as 10 pre-computed variables that are overlaid over the raw data enhancing the visibility of the specific calculation. Finally, events can be shown, as color coded line boundries on the result images.</p>
-                  </div>
-                  <div id="lineL1"></div>
-                  <div id="heroLeftHeader1">1. Info 1 (Data)</div>
-                  <div id="heroLeftText1">
-                    <!-- <p>More in depth description of the data. What each of the 10 measurements are. </p> -->
-                    <p><strong>Measurements Types </strong></p>
-                    <p>Entropy: Measure of 'disorder' in a system</p>
-                    <p>Mean     Std: Mean of the standard deviations</p>
-                    <p>Deviation: The amount in which a single measurement is from the mean</p>
-                    <p>Fractal Dim:</p>
-                    <p>Skewness:</p>
-                    <p>Kurtosis
-                      Uniformity:</p>
-                    <p>Rel. Smoothness:</p>
-                    <p>T. Contrast :</p>
-                    <p>T. Directionality:</p>
-                    <p style="font-weight: bold">Event Types</p>
-                    <p style="font-weight: normal">Active Region (AR):</p>
-                    <p style="font-weight: normal">Coronal Hole (CH):</p>
-                    <p style="font-weight: normal">Filament (FI):</p>
-                    <p style="font-weight: normal">Flare (FL):</p>
-                    <p style="font-weight: normal">Sigmoid (SG):</p>
-                    <p style="font-weight: normal">Sunspot (SS):</p>
-                  </div>
-                  <div id="lineL2"></div>
-                  <div id="heroLeftHeader2">2. Info 2 (Instruments)</div>
-                  <div id="heroLeftText2">
-                    <!--<p>The instruments used to record the data. </p> -->
-                    <p>Three independent instruments are used for data gathering, (AIA, HMI, and EVE)
-                      This dataset however only used the AIA instrument, also known as the Atmospheric Imaging Assembly.
-                      This instrument captures images in ten separate wavebands, ranging from the ultra-violet to extreme ultra-violet spectrums for specific pinpointing of solar events.</p>
-                  </div>
-                  <p>&nbsp;</p>
-                  <div id="lineL3"></div>
-                  <div id="heroLeftHeader3">3. Info 3 (Locations)</div>
-                  <div id="heroLeftText3">
-                    <!-- <p>Where the data was collected (MSU?), and by whom (The guy we talked to?), and for what purpose (Space grant or something...?) </p> -->
-                    <p>The data collection is from the Solar Dynamics Observatory, which is a 3-axis spacecraft containing the three measuring instruments (AIA, HMI, and EVE) 16 independent groups were selected by NASA, including a research group in Montana State University, granting specialized data access to the solar data, where information can be collected </p>
-                  </div>
-                  <div id="lineL4"></div>
-                  <div id="heroLeftHeader4">4. Info 4 (Uses)</div>
-                  <div id="heroLeftText4">
-                    <!-- <p>How this data can be used to further our scientific knowledge about the sun/our universe. </p> -->
-                    <p>The purpose of the dataset, is that it gives big data in solar physics, which can be used by researchers to examine many potential questions, such as classification and image similarity, indexing and retrieval, detection of objects within a region, and discovery of frequently occuring patterns.</p>
-                    <p>This data is also freely-available, allowing for usage by the public community, which allows for further analysis and examination of the dataset provided.</p>
-                  </div>
-                  <div id="lineL5"></div>
-                  <div id="heroLeftHeader5">5. Info 5 (Database)</div>
-                  <div id="heroLeftText5">
-                    <!-- <p>How our database helps in the use of the information described above.</p> -->
-                    <p>This database provides a simplifed way of searching through this massive dataset. As the dataset itself contains hundreds of thousands of datapoints, searching through the raw data would be very inefficent.</p>
-                    <p>Using this database, a user can call a query, and pull up any relevant information, in a easily viewable format, with both a table, and a visual representation of the data provided</p>
-                </div></td>																		
-																							<!-- /bodyLeft ---->
-				<td style="width: 45%; border: 2px none orange; height: 100%; color: #C0C0C0; background-color: #3f0000;">			<p>
-				<!-- bodyRight -----></p>
-				<!--
-				  <div id="question1">Pretty Stuff 1</div>
-                  <div id="answer1">Here we can give more information or post pictures or something. Pretty!</div>
-                  <div id="lineR1"></div>
-                  <div id="question2">Pretty Stuff 2</div>
-                  <div id="answer2">Here we can give more information or post pictures or something. Pretty!</div>
-                  <div id="lineR2"></div>
-                  <div id="question3">Pretty Stuff 3</div>
-                  <div id="answer2">Here we can give more information or post pictures or something. Pretty!</div>
-				  -->
-				</td>																							
-			</tr>																			<!-- /bodyRight ---->																
-			<!---------------------------------------------------------------------------------------------->
-			<tr>																			<!-- footer --->
-				<td colspan="3" style="border: 2px none brown; color: #C0C0C0; background-color: #2a0000;">
+                </td>
+				
+				<!-- Content: Body -->
+				<td style="width: 100%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft -----><!-- end minute_end -->
+					<div style="width:100%; height:100%; position:fixed   border: 1px solid white; background-color: #3F0000;">
+						<div style="width:90%; overflow-y:scroll; height:80%; position:fixed; background-color: #3F0000; border: 1px none black;">
+							<!-- Content within scrollable area -->
+							<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+								<tr>
+									<td style="width: 45%;background-color: #3f0000;">
+										<div id="heroLeftIntroductionTitle"><big id="btnAboutUs">Introduction<big>&nbsp;</big></big></div>
+										<div id="heroLeftIntroduction">
+											<p>Our database covers the dataset provided by the Solar Dynamics Observatory, the dataset used ranges from January to June from the year 2012.
+											The measurements include raw data, which are shown as images, as well as 10 pre-computed variables that are overlaid over the raw data enhancing the visibility of the specific calculation. Finally, events can be shown, as color coded line boundries on the result images.</p>
+										</div>
+										
+										<div id="lineL1"></div>
+										<div id="heroLeftHeader1">1. Info 1 (Data)</div>
+										<div id="heroLeftText1">
+											<p><strong>Measurements Types </strong></p>
+											<p>Entropy: Measure of 'disorder' in a system</p>
+											<p>Mean     Std: Mean of the standard deviations</p>
+											<p>Deviation: The amount in which a single measurement is from the mean</p>
+											<p>Fractal Dim:</p>
+											<p>Skewness:</p>
+											<p>Kurtosis Uniformity:</p>
+											<p>Rel. Smoothness:</p>
+											<p>T. Contrast :</p>
+											<p>T. Directionality:</p>
+											<p style="font-weight: bold">Event Types</p>
+											<p style="font-weight: normal">Active Region (AR):</p>
+											<p style="font-weight: normal">Coronal Hole (CH):</p>
+											<p style="font-weight: normal">Filament (FI):</p>
+											<p style="font-weight: normal">Flare (FL):</p>
+											<p style="font-weight: normal">Sigmoid (SG):</p>
+											<p style="font-weight: normal">Sunspot (SS):</p>
+										</div>
+										<div id="lineL2"></div>
+										<div id="heroLeftHeader2">2. Info 2 (Instruments)</div>
+										<div id="heroLeftText2">
+											<p>
+												Three independent instruments are used for data gathering, (AIA, HMI, and EVE)
+												This dataset however only used the AIA instrument, also known as the Atmospheric Imaging Assembly.
+												This instrument captures images in ten separate wavebands, ranging from the ultra-violet to extreme ultra-violet spectrums for specific pinpointing of solar events.
+											</p>
+										</div>
+										<p>&nbsp;</p>
+										<div id="lineL3"></div>
+										<div id="heroLeftHeader3">3. Info 3 (Locations)</div>
+										<div id="heroLeftText3">
+											<p>The data collection is from the Solar Dynamics Observatory, which is a 3-axis spacecraft containing the three measuring instruments (AIA, HMI, and EVE) 16 independent groups were selected by NASA, including a research group in Montana State University, granting specialized data access to the solar data, where information can be collected </p>
+										</div>
+										<div id="lineL4"></div>
+										<div id="heroLeftHeader4">4. Info 4 (Uses)</div>
+										<div id="heroLeftText4">
+											<p>The purpose of the dataset, is that it gives big data in solar physics, which can be used by researchers to examine many potential questions, such as classification and image similarity, indexing and retrieval, detection of objects within a region, and discovery of frequently occuring patterns.</p>
+											<p>This data is also freely-available, allowing for usage by the public community, which allows for further analysis and examination of the dataset provided.</p>
+										</div>
+										<div id="lineL5"></div>
+										<div id="heroLeftHeader5">5. Info 5 (Database)</div>
+										<div id="heroLeftText5">
+											<p>This database provides a simplifed way of searching through this massive dataset. As the dataset itself contains hundreds of thousands of datapoints, searching through the raw data would be very inefficent.</p>
+											<p>Using this database, a user can call a query, and pull up any relevant information, in a easily viewable format, with both a table, and a visual representation of the data provided</p>
+										</div>
+									</td>
+									<td style="width: 45%;background-color: #3f0000;">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>																																								
+			</tr>																																			
+			<!-- Bottom Row: Footer -->
+			<tr>																			
+				<td colspan="3" style="width: 100%; height: 10%; border: 2px none brown; color: #C0C0C0; background-color: #2a0000;">
 					Brendan Burns, David Bell, David Miller, Joshua Leger <br> Solar Sailors
 				</td>
-			</tr>																			
-																							<!-- /footer -->																									
-			<!---------------------------------------------------------------------------------------------->		
-			
+			</tr>	
 		</table>
 	</body>
 </html>

@@ -1,4 +1,11 @@
 <html style="width: 100%; height: 100%; border: 0; margin: 0">
+
+	<head>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>New Search</title>
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+		<link rel="stylesheet" href="css/display_data.css" type="text/css">
+	</head>
+
 	<body style="width: 100%; height: 100%; border: 0; margin: 0">
 		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
 			<tr>
@@ -10,7 +17,7 @@
 				<td valign="top"><br>
 				  <a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
                   <a><u>New Search</u></a><br>
-                <a href="display_data_php.php" style="text-decoration : none; color : silver;">Display Data</a><br></td>
+                </td>
 																							<!-- /leftSidebar-->
 				<td style="width: 45%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft ----->
 
@@ -217,7 +224,7 @@
 						<!-- bodyRight ----->
 
 							<b>Shown Events</b><br>
-							<input type="checkbox" name="event_ar" value="ar">Active Region<br>
+							<input type="checkbox" name="event_ar" value="ar" checked="checked">Active Region<br>
 							<input type="checkbox" name="event_ch" value="ch">Coronal Hole<br>
 							<input type="checkbox" name="event_fi" value="fi">Filament<br>
 							<input type="checkbox" name="event_fl" value="fl">Flare<br>
@@ -227,7 +234,7 @@
 							<br>
 											  
 							<b>Measurement Type</b><br>
-							<input type="radio" name="measurement" value="Entropy">Entropy<br>
+							<input type="radio" name="measurement" value="Entropy" checked="checked">Entropy<br>
 							<input type="radio" name="measurement" value="Mean">Mean<br>
 							<input type="radio" name="measurement" value="StandardDeviation">Std. Deviation<br>
 							<input type="radio" name="measurement" value="FractalDimension">Fractal Dim.<br>
@@ -238,7 +245,7 @@
 							<input type="radio" name="measurement" value="TContrast">T. Contrast<br>
 							<input type="radio" name="measurement" value="TDirectionality">T. Directionality<br>
 							<input type="radio" name="measurement" value="Raw">Raw data<br>
-							<input type="radio" name="measurement" value="None" checked="checked">None<br>
+							<input type="radio" name="measurement" value="None">None<br>
 							<br></br>
 							
 							<input type="submit">

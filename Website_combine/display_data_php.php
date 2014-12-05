@@ -1,7 +1,7 @@
 <html style="width: 100%; height: 100%; border: 0; margin: 0">
 	
 	<head>
-		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Display Data</title>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Search Results</title>
 		<link rel="stylesheet" href="css/global.css" type="text/css">
 		<link rel="stylesheet" href="css/display_data.css" type="text/css">
 	</head>
@@ -30,7 +30,7 @@
 				<td style="width: 70%; border: 1px none white; height: 100%; position:fixed  background-color: #3F0000; color: #C0C0C0;">
 				
 					<!-- Header Column -->
-					<table style="width:99%; height: 5%; border: 1px solid black; background-color: #2a0000; color: white;">
+					<table style="width:99%; height: 5%; border: 1px solid black; background-color: #3F0000; color: white;">
 						<tr>
 							
 							<td style="border:1px solid black;width:33%">StartTime</td> 
@@ -238,7 +238,7 @@
 
 								
 								$final_input = " " .  $start_date . " " . $start_hour_min . " " . $end_date . " " . $end_hour_min . " " . $event_string . " " . $selected_measurement . " " . $channel_number;
-								echo($final_input);
+								//echo($final_input);
 								
 
 								
