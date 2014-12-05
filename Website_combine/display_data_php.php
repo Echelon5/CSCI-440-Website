@@ -8,7 +8,7 @@
 	
 	
 	<body style="width: 100%; height: 100%; border: 0; margin: 0">
-		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F1111; color: silver;">
+		<table style="width: 100%; height: 100%; border-spacing: 0; border: 3px none blue; background-color: #3F0000; color: silver;">
 			
 			<!-- Header -->
 			<tr>
@@ -20,7 +20,7 @@
 			<tr>								
 		
 				<!-- sidebar -->
-				<td valign="top" style="width: 10%; border: 1px solid black; height: 80%; background-color: #3F0000; color: #C0C0C0;"><br>
+				<td valign="top" style="width: 10%; border: 1px solid black; height: 80%; background-color: #3f1111; color: #C0C0C0;"><br>
 					<a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
 					<a href="new_search.php" style="text-decoration : none; color : silver;">New Search</a><br>
 					<a><u>Display Data</u></a><br>
