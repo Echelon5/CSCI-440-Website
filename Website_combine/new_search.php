@@ -10,7 +10,6 @@
 				<td valign="top"><br>
 				  <a href="index.html" style="text-decoration : none; color : silver;">Home</a><br>
                   <a><u>New Search</u></a><br>
-                <a href="display_data_php.php" style="text-decoration : none; color : silver;">Display Data</a><br></td>
 																							<!-- /leftSidebar-->
 				<td style="width: 45%; border: 2px none orange; height: 100%; background-color: #3F0000; color: #C0C0C0;">			<!-- bodyLeft ----->
 
