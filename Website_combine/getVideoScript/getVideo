@@ -1,14 +1,19 @@
 #!/bin/bash
 
+if [ "$6" == "none" ] ; then
+    rm /home/david/CSCI-440-Website/Website_combine/video.swf 2> /dev/null
+    exit 0
+fi
+
 export DISPLAY=:0
 
-while (( "$(ps aux | grep java | wc -l)" > "1" )) ; do
-    sleep 2
-done
+#while (( "$(ps aux | grep java | wc -l)" > "1" )) ; do
+#    sleep 2
+#done
 
 rm /home/david/pngs/* 2> /dev/null
 
 if java -jar /home/david/NetBeansProjects/ImageOps/dist/ImageOps.jar $1 $2 $3 $4 $5 $6 $7 ; then
-    rm /home/david/CSCI-440-Website/Website_combine/video.swf
+    rm /home/david/CSCI-440-Website/Website_combine/video.swf 2> /dev/null
     ffmpeg -f image2 -i /home/david/pngs/image%d.png /home/david/CSCI-440-Website/Website_combine/video.swf 2> /dev/null > /dev/null
 fi

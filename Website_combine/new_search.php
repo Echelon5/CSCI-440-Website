@@ -256,8 +256,8 @@
 					<input type="radio" name="measurement" value="RelativeSmoothness">Rel. Smoothness<br>
 					<input type="radio" name="measurement" value="TContrast">T. Contrast<br>
 					<input type="radio" name="measurement" value="TDirectionality">T. Directionality<br>
-					<input type="radio" name="measurement" value="Raw">Raw data<br>
-					<input type="radio" name="measurement" value="None">None<br>
+					<input type="radio" name="measurement" value="raw">Raw data<br>
+					<input type="radio" name="measurement" value="none">None<br>
 					<br></br>
 							
 					<input type="submit">
